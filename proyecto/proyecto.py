@@ -18,7 +18,26 @@ def index() -> rx.Component:
         "Contenido de la tarjeta 2",
         "Contenido de la tarjeta 3",
         "Contenido de la tarjeta 4",
-        "Contenido de la tarjeta 5",]
+        "Contenido de la tarjeta 5",
+        "Contenido de la tarjeta 6",
+        "Contenido de la tarjeta 7",
+        "Contenido de la tarjeta 8",
+        "Contenido de la tarjeta 9",
+        "Contenido de la tarjeta 10",
+        "Contenido de la tarjeta 11",
+        "Contenido de la tarjeta 12",
+        "Contenido de la tarjeta 13",
+        "Contenido de la tarjeta 14",
+        "Contenido de la tarjeta 15",
+        "Contenido de la tarjeta 16",
+        "Contenido de la tarjeta 17",
+        "Contenido de la tarjeta 18",
+        "Contenido de la tarjeta 19",
+        "Contenido de la tarjeta 20",
+        "Contenido de la tarjeta 21",
+        "Contenido de la tarjeta 22",
+        "Contenido de la tarjeta 23",
+        "Contenido de la tarjeta 24",]
 
     return rx.container(
         rx.color_mode.button(position="top-right"),
