@@ -18,8 +18,7 @@ def index() -> rx.Component:
         "Contenido de la tarjeta 2",
         "Contenido de la tarjeta 3",
         "Contenido de la tarjeta 4",
-        
-    ]
+        "Contenido de la tarjeta 5",]
 
     return rx.container(
         rx.color_mode.button(position="top-right"),
