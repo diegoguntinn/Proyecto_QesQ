@@ -40,7 +40,7 @@ def index() -> rx.Component:
         "Contenido de la tarjeta 24",]
 
     return rx.container(
-        rx.color_mode.button(position="top-right"),
+        rx.color_mode.button(position="top-left"),
         rx.grid(
             rx.foreach(
                 rx.Var.range(24),  # Crea 24 tarjetas
