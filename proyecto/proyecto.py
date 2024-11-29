@@ -42,23 +42,16 @@ def index() -> rx.Component:
     return rx.container(
         rx.color_mode.button(position="top-right"),
         rx.grid(
-            rx.foreach(
-                rx.Var.range(24),  # Crea 24 tarjetas
-                lambda i: rx.card(
-                    # Aquí personalizamos el contenido de cada tarjeta
-                    f"Card {i + 1}",
-                    height="10vh",
-                    children=[
-                        rx.text(card_contents[i % len(card_contents)])  # Modifica el contenido de cada tarjeta
-                    ]
-                ),
-            ),
-            columns="8",
-            spacing="4",
-            width="100%",
-        )
+    rx.foreach(
+        rx.Var.range(24),
+        lambda i: rx.card(f"Persona {i + 1}", height="10vh"),
+    ),
+    columns="8",
+    spacing="4",
+    width="100%",
+)
     )
-
+    
 
 app = rx.App()
 app.add_page(index)
