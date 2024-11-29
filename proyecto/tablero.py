@@ -22,6 +22,25 @@ def index() -> rx.Component:
 
     return rx.container(
         rx.color_mode.button(position="top-right"),
+        rx.grid(
+            rx.foreach(
+                image_files,
+                lambda image: rx.card(
+                    rx.image(
+                        src=f"{image}",  # Ruta actualizada a 'assets'
+                        alt=f"Imagen de {image.split('.')[0]}",
+                         width="100%",
+                        height="100%",
+                        object_fit="cover",
+                    ),
+                    rx.text(image.split(".")[0], padding="10px"),  # Nombre derivado del archivo
+                    height="20vh",
+                ),
+            ),
+            columns="8",
+            spacing="4",
+            width="100%",
+        ),
     )
 
 

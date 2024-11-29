@@ -9,40 +9,33 @@ class State(rx.State):
     """The app state."""
 
     ...
+def tablero():
+    return rx.link(
+        rx.button("Jugar"),
+        href="/tablero",
+        external="False",
+        )
 
+@rx.page(route="/", title="tablero")
 def index() -> rx.Component:
-    # Ruta de la carpeta 'assets'
-    assets_dir = os.path.join(os.path.dirname(__file__), "../assets")
-    # Obtener los nombres de los archivos de imagen
-    try:
-        image_files = sorted([f for f in os.listdir(assets_dir) if f.endswith((".png", ".jpg", ".jpeg"))])
-        print("Imágenes encontradas:", image_files)  # Agregar para depurar
-    except FileNotFoundError:
-        image_files = []  # Si la carpeta no existe, manejarlo adecuadamente.
-
     return rx.container(
         rx.color_mode.button(position="top-right"),
-        rx.grid(
-            rx.foreach(
-                image_files,
-                lambda image: rx.card(
-                    rx.image(
-                        src=f"{image}",  # Ruta actualizada a 'assets'
-                        alt=f"Imagen de {image.split('.')[0]}",
-                         width="100%",
-                        height="100%",
-                        object_fit="cover",
-                    ),
-                    rx.text(image.split(".")[0], padding="10px"),  # Nombre derivado del archivo
-                    height="20vh",
-                ),
-            ),
-            columns="8",
-            spacing="4",
-            width="100%",
+        rx.vstack(
+            rx.heading("¿quien es quien?", size="9"),
+            tablero(),
+            spacing="5",
+            justify="center",
+            min_height="85v",
+            #rx.text("¿Quién", font_size="120px", font_weight="bold", margin="10px 0 0 0"),
+            #rx.text("es", font_size="110px", font_weight="bold", margin="20px 0 0 20px"),
+            #rx.text("Quién?", font_size="100px", font_weight="bold", margin="30px 0 0 40px"),
+        #direction="column",  # Organizar en columna
+        #align="flex-start",  # Alinear al inicio de la columna
+        #justify="flex-start",  # Justificar al inicio verticalmente
+        #height="100vh",  # Altura completa de la pantalla
+        #width="100%",  # Ancho completo
         ),
+        rx.logo(),
     )
-
-
 app = rx.App()
-app.add_page(indexe)
+app.add_page(index)
