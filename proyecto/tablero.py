@@ -3,14 +3,12 @@
 import reflex as rx
 import os
 
-
-
 class State(rx.State):
     """The app state."""
 
     ...
-
-def index() -> rx.Component:
+@rx.page(route="/tablero", title="tablero")
+def tablero() -> rx.Component:
     # Ruta de la carpeta 'assets'
     assets_dir = os.path.join(os.path.dirname(__file__), "../assets")
     # Obtener los nombres de los archivos de imagen
@@ -42,7 +40,3 @@ def index() -> rx.Component:
             width="100%",
         ),
     )
-
-
-app = rx.App()
-app.add_page(index)
