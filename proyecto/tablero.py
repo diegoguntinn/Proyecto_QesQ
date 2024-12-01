@@ -1,5 +1,3 @@
-"""Welcome to Reflex! This file o"""
-
 import reflex as rx
 import os
 
@@ -10,7 +8,7 @@ class State(rx.State):
 @rx.page(route="/tablero", title="tablero")
 def tablero() -> rx.Component:
     # Ruta de la carpeta 'assets'
-    assets_dir = os.path.join(os.path.dirname(__file__), "../assets")
+    assets_dir = os.path.join(os.path.dirname(__file__), "../assets/personajes/")
     # Obtener los nombres de los archivos de imagen
     try:
         image_files = sorted([f for f in os.listdir(assets_dir) if f.endswith((".png", ".jpg", ".jpeg"))])
@@ -27,7 +25,7 @@ def tablero() -> rx.Component:
                     rx.image(
                         src=f"{image}",  # Ruta actualizada a 'assets'
                         alt=f"Imagen de {image.split('.')[0]}",
-                         width="100%",
+                        width="100%",
                         height="100%",
                         object_fit="cover",
                     ),

@@ -5,12 +5,23 @@ class State(rx.State):
     """The app state."""
 
     ...
+
 def cuadricula():
-    return rx.link(
+    # Botón 1: Jugar
+    jugar_btn = rx.link(
         rx.button("Jugar"),
         href="/tablero",
         external="False",
     )
+    # Botón 2: ajustes
+    ajustes_btn = rx.link(
+        rx.button("Ajustes"),
+        href="/ajustes",
+        external="False",
+    )
+
+
+    return rx.vstack(jugar_btn, ajustes_btn, spacing="2")
 
 @rx.page(route="/", title="proyecto")
 def index() -> rx.Component:
