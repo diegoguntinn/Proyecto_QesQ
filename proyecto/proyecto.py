@@ -1,48 +1,3 @@
-# import reflex as rx
-#i mport os
-#
-#class State(rx.State):
-#    """The app state."""
-#
-#
-#@rx.page(route="/", title="proyecto")
-#
-#def index() -> rx.Component:
-#    
-#    assets_dir = os.path.join(os.path.dirname(__file__), "../assets/")
-#    try:
-#        image_files = sorted([f for f in os.listdir(assets_dir) if f.endswith((".png", ".jpg", ".jpeg"))])
-#        print("Imágenes encontradas:", image_files)
-#    except FileNotFoundError:
-#        image_files = []
-#    
-#    image_files = sorted([foto for foto in os.listdir(assets_dir)])
-#    
-#
-#    return rx.container(
-#        rx.color_mode.button(position="top-right"),
-#        rx.grid(
-#            rx.foreach(
-#                image_files,
-#                lambda image: rx.card(
-#                    rx.image(
-#                        src=f"{image}",
-#                    #    alt=f"Imagen de {image.split('.')[0]}",
-#                        width="100%",
-#                        height="100%",
-#                        object_fit="cover",
-#                    ),
-#                ),
-#            ),
-#            columns="8",
-#            spacing="4",
-#            width="100%",
-#        ),
-#    )
-#
-#
-#app = rx.App()
-
 import reflex as rx
 import os
 
@@ -94,6 +49,23 @@ def index() -> rx.Component:
         action_bar(),
     )
 
+def personaje():
+    return rx.popover.root(
+        rx.popover.trigger(
+            rx.button("Respuesta"),
+        ),
+        rx.popover.content(
+            rx.flex(
+                rx.image(src=r"Alex.png",size="20"),
+                rx.popover.close(
+                    rx.button("Close"),
+                ),
+                direction="column",
+                spacing="3",
+            ),
+        ),
+    )
+
 @rx.page(route="/", title="proyecto")
 def index() -> rx.Component:
     return rx.container(
@@ -101,7 +73,8 @@ def index() -> rx.Component:
             rx.color_mode.button(position="top-right"),
             tablero(),
             input(),
+            personaje(),
         )
     )
-    
+    ##a##
 app = rx.App()
