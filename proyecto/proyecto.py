@@ -1,40 +1,107 @@
+# import reflex as rx
+#i mport os
+#
+#class State(rx.State):
+#    """The app state."""
+#
+#
+#@rx.page(route="/", title="proyecto")
+#
+#def index() -> rx.Component:
+#    
+#    assets_dir = os.path.join(os.path.dirname(__file__), "../assets/")
+#    try:
+#        image_files = sorted([f for f in os.listdir(assets_dir) if f.endswith((".png", ".jpg", ".jpeg"))])
+#        print("Imágenes encontradas:", image_files)
+#    except FileNotFoundError:
+#        image_files = []
+#    
+#    image_files = sorted([foto for foto in os.listdir(assets_dir)])
+#    
+#
+#    return rx.container(
+#        rx.color_mode.button(position="top-right"),
+#        rx.grid(
+#            rx.foreach(
+#                image_files,
+#                lambda image: rx.card(
+#                    rx.image(
+#                        src=f"{image}",
+#                    #    alt=f"Imagen de {image.split('.')[0]}",
+#                        width="100%",
+#                        height="100%",
+#                        object_fit="cover",
+#                    ),
+#                ),
+#            ),
+#            columns="8",
+#            spacing="4",
+#            width="100%",
+#        ),
+#    )
+#
+#
+#app = rx.App()
+
 import reflex as rx
 import os
 
-class State(rx.State):
-    """The app state."""
-
-    ...
-
-def cuadricula():
-    # Botón 1: Jugar
-    jugar_btn = rx.link(
-        rx.button("Jugar"),
-        href="/tablero",
-        external="False",
+def tablero():
+    return rx.grid(
+        rx.card("Alex",rx.image(src=r"Alex.png")),
+        rx.card("Alfred",rx.image(src=r"Alfred.png")),
+        rx.card("Anita",rx.image(src=r"Anita.png")),
+        rx.card("Anne",rx.image(src=r"Anne.png")),
+        rx.card("Bernard",rx.image(src=r"Bernard.png")),
+        rx.card("Bill",rx.image(src=r"Bill.png")),
+        rx.card("Charles",rx.image(src=r"Charles.png")),
+        rx.card("Claire",rx.image(src=r"Claire.png")),
+        rx.card("David",rx.image(src=r"David.png")),
+        rx.card("Eric",rx.image(src=r"Eric.png")),
+        rx.card("Frans",rx.image(src=r"Frans.png")),
+        rx.card("George",rx.image(src=r"George.png")),
+        rx.card("Herman",rx.image(src=r"Herman.png")),
+        rx.card("Joe",rx.image(src=r"Joe.png")),
+        rx.card("Maria",rx.image(src=r"Maria.png")),
+        rx.card("Max",rx.image(src=r"Max.png")),
+        rx.card("Paul",rx.image(src=r"Paul.png")),
+        rx.card("Peter",rx.image(src=r"Peter.png")),
+        rx.card("Philip",rx.image(src=r"Philip.png")),
+        rx.card("Richard",rx.image(src=r"Richard.png")),
+        rx.card("Robert",rx.image(src=r"Robert.png")),
+        rx.card("Sam",rx.image(src=r"Sam.png")),
+        rx.card("Susan",rx.image(src=r"Susan.png")),
+        rx.card("Tom",rx.image(src=r"Tom.png")),
+        
+        size="20",
+        columns="8",
+        spacing="4",
+        width="100%",
+        align = "center",
     )
-    # Botón 2: ajustes
-    ajustes_btn = rx.link(
-        rx.button("Ajustes"),
-        href="/ajustes",
-        external="False",
+
+def input() -> rx.Component:
+    return rx.hstack(
+        rx.input(placeholder="Haz una pregunta"),
+        rx.button("Enviar"),
+        align = "center",
     )
 
 
-    return rx.vstack(jugar_btn, ajustes_btn, spacing="2")
+def index() -> rx.Component:
+    return rx.container(
+        chat(),
+        action_bar(),
+    )
 
 @rx.page(route="/", title="proyecto")
 def index() -> rx.Component:
     return rx.container(
-        rx.color_mode.button(position="top-right"),
         rx.vstack(
-            rx.heading("¿quien es quien?", size="9"),
-            cuadricula(),
-            spacing="5",
-            justify="center",
-            min_height="85v",
-        ),
-        rx.logo(),
+            rx.color_mode.button(position="top-right"),
+            tablero(),
+            input(),
+        )
     )
-
+    
 app = rx.App()
