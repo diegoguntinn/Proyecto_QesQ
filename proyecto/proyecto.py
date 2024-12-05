@@ -64,11 +64,11 @@ def input() -> rx.Component:
     )
 
 
-def index() -> rx.Component:
-    return rx.container(
-        chat(),
-        action_bar(),
-    )
+#def index() -> rx.Component:
+#    return rx.container(
+#        chat(),
+#        action_bar(),
+#    )
 
 def personaje():
     return rx.popover.root(
