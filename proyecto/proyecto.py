@@ -1,6 +1,6 @@
 import reflex as rx
 import os
-
+import random
 
 
 
@@ -283,12 +283,12 @@ def tablero():
 #        align = "center",
 #    )
 
-def input() -> rx.Component:
-    return rx.hstack(
-        rx.input(placeholder="Haz una pregunta"),
-        rx.button("Enviar"),
-        align = "center",
-    )
+#def input() -> rx.Component:
+#    return rx.hstack(
+#        rx.input(placeholder="Haz una pregunta"),
+#        rx.button("Enviar"),
+#        align = "center",
+#    )
 
 
 #def index() -> rx.Component:
@@ -296,23 +296,83 @@ def input() -> rx.Component:
 #        chat(),
 #        action_bar(),
 #    )
+#
+#def personaje():
+#    return rx.popover.root(
+#        rx.popover.trigger(
+#            rx.button("Respuesta"),
+#        ),
+#        rx.popover.content(
+#            rx.flex(
+#                rx.image(src=r"Peter.png",size="20"),
+#                rx.popover.close(
+#                    rx.button("Close"),
+#                ),
+#                direction="column",
+#                spacing="3",
+#            ),
+#        ),
+#    )
 
-def personaje():
-    return rx.popover.root(
-        rx.popover.trigger(
-            rx.button("Respuesta"),
-        ),
-        rx.popover.content(
-            rx.flex(
-                rx.image(src=r"Peter.png",size="20"),
-                rx.popover.close(
-                    rx.button("Close"),
+class FormInputState(rx.State):
+    form_data: dict = {}
+
+    @rx.event
+    def handle_submit(self, form_data: dict):
+        """Handle the form submit."""
+        self.form_data = form_data
+
+
+def form_input1():
+    return rx.card(
+        rx.vstack(
+            rx.heading("Hacer Preguntas"),
+            rx.form.root(
+                rx.hstack(
+                    rx.input(
+                        name="input",
+                        placeholder="Escriba Pregunta",
+                        type="text",
+                        required=True,
+                    ),
+                    rx.button("Preguntar", type="submit"),
+                    width="100%",
                 ),
-                direction="column",
-                spacing="3",
+                on_submit=FormInputState.handle_submit,
+                reset_on_submit=True,
             ),
+            rx.divider(),
+            rx.hstack(
+                rx.heading("Results:"),
+                rx.badge(
+                    FormInputState.form_data.to_string()
+                ),
+            ),
+            align_items="left",
+            width="100%",
         ),
+        width="50%",
     )
+
+
+
+
+
+def pregunta(form_input1):
+    pregunta = pregunta.lower()
+    for palabra in pregunta.split():  # Dividir la pregunta en palabras
+        if palabra in caracteristicas_unicas:  # Comprobar si la palabra está en la lista de características
+            if palabra in Personajes[personaje_maquina]:  # Verificar si el personaje tiene la característica
+                print("Si")
+            else:
+                print("No")
+            break  # Salir del bucle al encontrar una coincidencia válida
+        else:
+            continue
+
+
+
+
 
 @rx.page(route="/", title="proyecto")
 def index() -> rx.Component:
@@ -320,8 +380,10 @@ def index() -> rx.Component:
         rx.vstack(
             rx.color_mode.button(position="top-right"),
             tablero(),
-            input(),
-            personaje(),
+        #    index(),
+        #    input(),
+        #    personaje(),
+            form_input1(),
         )
     )
 app = rx.App()
