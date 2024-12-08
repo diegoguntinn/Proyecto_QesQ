@@ -112,131 +112,194 @@ class ClassState(rx.State):
 def tablero():
     return rx.grid(
         rx.card(
-            "Alex",
+            rx.box(
+                "Alex",
+                text_align="center",  # Centra el texto horizontalmente
+            ),
             rx.image(src=ClassState.img_src_alex),  # Bind the image source to state
             on_click=ClassState.toggle_image_alex,  # Add the click event handler
             ),
         rx.card(
-            "Alfred",
+            rx.box(
+                "Alfred",
+                text_align="center",  # Centra el texto horizontalmente
+            ),
             rx.image(src=ClassState.img_src_alfred),
             on_click=ClassState.toggle_image_alfred,
             ),
         rx.card(
-            "Anita",
+            rx.box(
+                "Anita",
+                text_align="center",  # Centra el texto horizontalmente
+            ),
             rx.image(src=ClassState.img_src_anita),
             on_click=ClassState.toggle_image_anita,
             ),
         rx.card(
-            "Anne",
+            rx.box(
+                "Anne",
+                text_align="center",  # Centra el texto horizontalmente
+            ),
             rx.image(src=ClassState.img_src_anne),
             on_click=ClassState.toggle_image_anne,
             ),
         rx.card(
-            "Bernard",
+            rx.box(
+                "Bernard",
+                text_align="center",  # Centra el texto horizontalmente
+            ),
             rx.image(src=ClassState.img_src_bernard),
             on_click=ClassState.toggle_image_bernard,
             ),
         rx.card(
-            "Bill",
+            rx.box(
+                "Bill",
+                text_align="center",  # Centra el texto horizontalmente
+            ),
             rx.image(src=ClassState.img_src_bill),
             on_click=ClassState.toggle_image_bill,
             ),
         rx.card(
-            "Charles",
+            rx.box(
+                "Charles",
+                text_align="center",  # Centra el texto horizontalmente
+            ),
             rx.image(src=ClassState.img_src_charles),
             on_click=ClassState.toggle_image_charles,
             ),
         rx.card(
-            "Claire",
+            rx.box(
+                "Claire",
+                text_align="center",  # Centra el texto horizontalmente
+            ),
             rx.image(src=ClassState.img_src_claire),
             on_click=ClassState.toggle_image_claire,
             ),
         rx.card(
-            "David",
+            rx.box(
+                "David",
+                text_align="center",  # Centra el texto horizontalmente
+            ),
             rx.image(src=ClassState.img_src_david),
             on_click=ClassState.toggle_image_david,
             ),
         rx.card(
-            "Eric",
+            rx.box(
+                "Eric",
+                text_align="center",  # Centra el texto horizontalmente
+            ),
             rx.image(src=ClassState.img_src_eric),
             on_click=ClassState.toggle_image_eric,
             ),
         rx.card(
-            "Frans",
+            rx.box(
+                "Frans",
+                text_align="center",  # Centra el texto horizontalmente
+            ),
             rx.image(src=ClassState.img_src_frans),
             on_click=ClassState.toggle_image_frans,
             ),
         rx.card(
-            "George",
+            rx.box(
+                "George",
+                text_align="center",  # Centra el texto horizontalmente
+            ),
             rx.image(src=ClassState.img_src_george),
             on_click=ClassState.toggle_image_george,
             ),
         rx.card(
-            "Herman",
+            rx.box(
+                "Herman",
+                text_align="center",  # Centra el texto horizontalmente
+            ),
             rx.image(src=ClassState.img_src_herman),
             on_click=ClassState.toggle_image_herman,
             ),
         rx.card(
-            "Joe",
+            rx.box(
+                "Joe",
+                text_align="center",  # Centra el texto horizontalmente
+            ),
             rx.image(src=ClassState.img_src_joe),
             on_click=ClassState.toggle_image_joe,
             ),
         rx.card(
-            "Maria",
+            rx.box(
+                "Maria",
+                text_align="center",  # Centra el texto horizontalmente
+            ),
             rx.image(src=ClassState.img_src_maria),
             on_click=ClassState.toggle_image_maria,
             ),
-
         rx.card(
-            "Max",
+            rx.box(
+                "Max",
+                text_align="center",  # Centra el texto horizontalmente
+            ),
             rx.image(src=ClassState.img_src_max),
             on_click=ClassState.toggle_image_max,
             ),
-
         rx.card(
-            "Paul",
+            rx.box(
+                "Paul",
+                text_align="center",  # Centra el texto horizontalmente
+            ),
             rx.image(src=ClassState.img_src_paul),
             on_click=ClassState.toggle_image_paul,
             ),
-
         rx.card(
-            "Peter",
+            rx.box(
+                "Peter",
+                text_align="center",  # Centra el texto horizontalmente
+            ),
             rx.image(src=ClassState.img_src_peter),
             on_click=ClassState.toggle_image_peter,
             ),
-
         rx.card(
-            "Philip",
+            rx.box(
+                "Philip",
+                text_align="center",  # Centra el texto horizontalmente
+            ),
             rx.image(src=ClassState.img_src_philip),
             on_click=ClassState.toggle_image_philip,
             ),
-
         rx.card(
-            "Richard",
+            rx.box(
+                "Richard",
+                text_align="center",  # Centra el texto horizontalmente
+            ),
             rx.image(src=ClassState.img_src_richard),
             on_click=ClassState.toggle_image_richard,
             ),
-
         rx.card(
-            "Robert",
+            rx.box(
+                "Robert",
+                text_align="center",  # Centra el texto horizontalmente
+            ),
             rx.image(src=ClassState.img_src_robert),
             on_click=ClassState.toggle_image_robert,
             ),
-
         rx.card(
-            "Sam",
+            rx.box(
+                "Sam",
+                text_align="center",  # Centra el texto horizontalmente
+            ),
             rx.image(src=ClassState.img_src_sam),
             on_click=ClassState.toggle_image_sam,
             ),
-
         rx.card(
-            "Susan",
+            rx.box(
+                "Susan",
+                text_align="center",  # Centra el texto horizontalmente
+            ),
             rx.image(src=ClassState.img_src_susan),
             on_click=ClassState.toggle_image_susan,
             ),
-
         rx.card(
-            "Tom",
+            rx.box(
+                "Tom",
+                text_align="center",  # Centra el texto horizontalmente
+            ),
             rx.image(src=ClassState.img_src_tom),
             on_click=ClassState.toggle_image_tom,
             ),
