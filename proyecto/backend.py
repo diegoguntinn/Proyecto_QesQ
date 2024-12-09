@@ -1,5 +1,7 @@
 import random
-
+import reflex
+import os
+from proyecto.proyecto import form_input1
 # Diccionario de personajes con sus características
 Personajes = {
     "Alex": ["hombre", "menton", "bigote", "ojos marrones", "pelo marron","alex"],
@@ -35,13 +37,23 @@ caracteristicas_unicas:["alex","charles","richard","sam","peter","tom","susan","
 # Fragmento del bucle que evalúa palabra por palabra
 
 def pregunta(form_input1):
-    pregunta = pregunta.lower()
-    for palabra in pregunta.split():  # Dividir la pregunta en palabras
-        if palabra in caracteristicas_unicas:  # Comprobar si la palabra está en la lista de características
-            if palabra in Personajes[personaje_maquina]:  # Verificar si el personaje tiene la característica
-                print("Si")
-            else:
-                print("No")
-            break  # Salir del bucle al encontrar una coincidencia válida
-        else:
-            continue
+#    pregunta = pregunta.lower()
+#    for palabra in pregunta.split():  # Dividir la pregunta en palabras
+#        if palabra in caracteristicas_unicas:  # Comprobar si la palabra está en la lista de características
+#            if palabra in Personajes[personaje_maquina]:  # Verificar si el personaje tiene la característica
+#                print("Si")
+#            else:
+#                print("No")
+#            break  # Salir del bucle al encontrar una coincidencia válida
+#        else:
+#            continue
+    
+
+    # Verificar si alguna palabra o frase está en la historia
+    resultados = [palabra for palabra in caracteristicas_unicas if palabra in pregunta]
+
+    # Imprimir las palabras/frases encontradas
+    if resultados:
+        print("Si", resultados)
+    else:
+        print("No", resultados)
