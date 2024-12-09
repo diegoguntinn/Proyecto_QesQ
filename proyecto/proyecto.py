@@ -2,9 +2,11 @@ import reflex as rx
 import os
 import random
 
-
-
-
+from proyecto import style
+from proyecto.state import State
+from proyecto.backend import Personajes
+question = ''
+answer = ''
 class ClassState(rx.State):
     img_src_alex: str = "Alex.png"  # Initial image source
     img_src_alfred: str = "Alfred.png"
@@ -354,28 +356,29 @@ def tablero():
 #    )
 
 
-#def index() -> rx.Component:
+#def indexx() -> rx.Component:
 #    return rx.container(
 #        chat(),
 #        action_bar(),
 #    )
 #
-#def personaje():
-#    return rx.popover.root(
-#        rx.popover.trigger(
-#            rx.button("Respuesta"),
-#        ),
-#        rx.popover.content(
-#            rx.flex(
-#                rx.image(src=r"Peter.png",size="20"),
-#                rx.popover.close(
-#                    rx.button("Close"),
-#                ),
-#                direction="column",
-#                spacing="3",
-#            ),
-#        ),
-#    )
+def personaje():
+    return rx.popover.root(
+        rx.popover.trigger(
+            rx.button("Respuesta"),
+        ),
+        rx.popover.content(
+            rx.flex(
+                rx.image(src=random.choice(list(Personajes.keys())) + ".png"),
+                #rx.text(random.choice(list(Personajes.keys()))),
+                rx.popover.close(
+                    rx.button("Close"),
+                ),
+                direction="column",
+                spacing="3",
+            ),
+        ),
+    )
 
 class FormInputState(rx.State):
     form_data: dict = {}
@@ -421,39 +424,36 @@ def form_input1():
 
 
 
-def pregunta(form_input1):
-    pregunta = pregunta.lower()
-    for palabra in pregunta.split():  # Dividir la pregunta en palabras
-        if palabra in caracteristicas_unicas:  # Comprobar si la palabra está en la lista de características
-            if palabra in Personajes[personaje_maquina]:  # Verificar si el personaje tiene la característica
-                print("Si")
-            else:
-                print("No")
-            break  # Salir del bucle al encontrar una coincidencia válida
-        else:
-            continue
+#def pregunta(form_input1):
+#    pregunta = pregunta.lower()
+#    for palabra in pregunta.split():  # Dividir la pregunta en palabras
+#        if palabra in caracteristicas_unicas:  # Comprobar si la palabra está en la lista de características
+#            if palabra in Personajes[personaje_maquina]:  # Verificar si el personaje tiene la característica
+#                print("Si")
+#            else:
+#                print("No")
+#            break  # Salir del bucle al encontrar una coincidencia válida
+#        else:
+#            continue
 
 
 
-## chatapp.py
-#
-#
-#
+
 #def chat() -> rx.Component:
 #    return rx.container(
 #        rx.box(
-#            "What is Reflex?",
+#            "Es hombre?",
 #            # The user's question is on the right.
 #            text_align="right",
 #        ),
 #        rx.box(
-#            "A way to build web apps in pure Python!",
+#            "Si",
 #            # The answer is on the left.
 #            text_align="left",
 #        ),
 #    )
 
-
+question = form_input1
 
 
 def qa(question: str, answer: str) -> rx.Component:
@@ -481,6 +481,30 @@ def chat() -> rx.Component:
             for question, answer in qa_pairs
         ]
     )
+class TextfieldControlled(rx.State):
+    text: str = "Hello World!"
+def action_bar() -> rx.Component:
+    return rx.hstack(
+        rx.input(
+            value=State.question,
+            placeholder="Ask a question",
+            on_change=State.set_question,
+            style=style.input_style,
+        ),
+        rx.vstack(
+        rx.heading(TextfieldControlled.text),
+        rx.input(
+            placeholder="Search here...",
+            value=TextfieldControlled.text,
+            on_change=TextfieldControlled.set_text,
+        )
+    ),
+        rx.button(
+            "Ask",
+            on_click=State.answer,
+            style=style.button_style,
+        ),
+    )
 
 
 def index() -> rx.Component:
@@ -493,14 +517,15 @@ def index() -> rx.Component:
     return rx.container(
         rx.vstack(
             rx.color_mode.button(position="top-right"),
-            tablero(),
-        #    index(),
+        #    tablero(),
+        #    indexx(),
         #    input(),
         #    personaje(),
             form_input1(),
             qa(),
             chat(),
-           index(),
+            action_bar(),
+            index(),
 
         )
     )

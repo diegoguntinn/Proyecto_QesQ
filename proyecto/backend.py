@@ -1,7 +1,7 @@
 import random
 import reflex
 import os
-from proyecto.proyecto import form_input1
+
 # Diccionario de personajes con sus características
 Personajes = {
     "Alex": ["hombre", "menton", "bigote", "ojos marrones", "pelo marron","alex"],
