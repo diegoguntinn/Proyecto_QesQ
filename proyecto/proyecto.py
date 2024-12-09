@@ -1,12 +1,12 @@
 import reflex as rx
 import os
 import random
+import rxconfig as config
 
 from proyecto import style
 from proyecto.state import State
 from proyecto.backend import Personajes
-question = ''
-answer = ''
+
 class ClassState(rx.State):
     img_src_alex: str = "Alex.png"  # Initial image source
     img_src_alfred: str = "Alfred.png"
@@ -453,7 +453,7 @@ def form_input1():
 #        ),
 #    )
 
-question = form_input1
+
 
 
 def qa(question: str, answer: str) -> rx.Component:
@@ -465,40 +465,24 @@ def qa(question: str, answer: str) -> rx.Component:
 
 
 def chat() -> rx.Component:
-    qa_pairs = [
-        (
-            "What is Reflex?",
-            "A way to build web apps in pure Python!",
-        ),
-        (
-            "What can I make with it?",
-            "Anything from a simple website to a complex web app!",
-        ),
-    ]
     return rx.box(
-        *[
-            qa(question, answer)
-            for question, answer in qa_pairs
-        ]
+        rx.foreach(
+            State.chat_history,
+            lambda messages: qa(messages[0], messages[1]),
+        )
     )
-class TextfieldControlled(rx.State):
-    text: str = "Hello World!"
+
+
+...
+
+
 def action_bar() -> rx.Component:
     return rx.hstack(
         rx.input(
-            value=State.question,
             placeholder="Ask a question",
             on_change=State.set_question,
             style=style.input_style,
         ),
-        rx.vstack(
-        rx.heading(TextfieldControlled.text),
-        rx.input(
-            placeholder="Search here...",
-            value=TextfieldControlled.text,
-            on_change=TextfieldControlled.set_text,
-        )
-    ),
         rx.button(
             "Ask",
             on_click=State.answer,
@@ -520,12 +504,12 @@ def index() -> rx.Component:
         #    tablero(),
         #    indexx(),
         #    input(),
-        #    personaje(),
-            form_input1(),
-            qa(),
+            personaje(),
+        #    form_input1(),
+        #    qa(),
             chat(),
             action_bar(),
-            index(),
+        #    index(),
 
         )
     )
