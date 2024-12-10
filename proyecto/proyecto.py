@@ -362,6 +362,7 @@ def tablero():
 #        action_bar(),
 #    )
 #
+
 def personaje():
     return rx.popover.root(
         rx.popover.trigger(
@@ -369,7 +370,7 @@ def personaje():
         ),
         rx.popover.content(
             rx.flex(
-                rx.image(src=random.choice(list(Personajes.keys())) + ".png"),
+                rx.image(src=State.personaje_maquina + ".png"),
                 #rx.text(random.choice(list(Personajes.keys()))),
                 rx.popover.close(
                     rx.button("Close"),
@@ -472,10 +473,6 @@ def chat() -> rx.Component:
         )
     )
 
-
-...
-
-
 def action_bar() -> rx.Component:
     return rx.hstack(
         rx.input(
@@ -501,12 +498,11 @@ def index() -> rx.Component:
     return rx.container(
         rx.vstack(
             rx.color_mode.button(position="top-right"),
-        #    tablero(),
+            tablero(),
         #    indexx(),
         #    input(),
             personaje(),
         #    form_input1(),
-        #    qa(),
             chat(),
             action_bar(),
         #    index(),
