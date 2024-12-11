@@ -1,25 +1,76 @@
 ﻿# Proyecto_QesQ
 
-Introduccion
+# **Introduccion**
 
  El proyecto consistia en la creación del popular juego de Quien es Quien, el cual consiste a grandes rasgos en poder adivinar el personaje de tu rival antes de que este adivine el que tu has seleccionado. En este proyecto el rival es una maquina la cual no juega y solo se limitara a responder las preguntas que tu le formules para poder adivinar el personaje que habra seleccionado aleatoriamente previamnente la maquina.
     
 Este proyecto llevado acabo por Javier Casal y Diego González, estudiantes de primer año de DAM (Desarrollo de Aplicaciones Multiplataforma) en el IES de TEIS con una preparación de entre dos y tres meses sobre python; llevaron acabo este proyecto basado en python con el uso de un framwork llamado "reflex" del cual no tenian conocimiento ninguno hasta la puesta en marcha de este proyecto.
     
-Manual 
+# **Manual**
 
 Que es lo que necesitaremos para poder jugar este juego, en primer lugar deveremos instalar las funciones necesarias q tendreis disponible en este proyecto como puede ser el propio codigo del proyecto y los recursos necesarios como pueden ser las fotos que se utilizan para los personajes, estos serian los requisitios para poder acceder al juego el cual se desenvolvera en un entorno web que nos proporcina reflex.
     
 A nivel de nuestro propio equipo no necesitaremos demasiadas especificaciones ya que solo  necesitaremos el espacio suficiente para poner ejecutar el codigo y el propio reflex para que este pueda ser usado. 
-    
-    
-Metodologia 
+
+
+## **Pre-requisitos**
+1 -   `Git`
+2 -   `Python3`
+3 -   `pip3`
+4 -   `reflex`
+5 -   `pytest`
+6 -   `coverage`
+
+
+
+## **Instalación**
+1- Para instalar este repositorio y acceder al juego primero tienes que crear la carpeta donde quieres guardar el repositorio, para hacer eso, sigue los siguentes comandos:
+```
+mkdir ./nombre_applicacion
+```
+```
+cd ./nombre_applicacion
+```
+
+2- Al acabar el primer paso, tienes que clonar el repositorio de GitHub, con el siguente comando:
+```
+git clone https://github.com/diegoguntinn/Proyecto_QesQ
+```
+
+3- Al acabar el segundo paso, tienes que instalar un entorno virtual, para hacer eso, sigue los siguentes comandos:
+
+
+**Versión Windows**
+```
+py -3 -m venv .venv
+```
+```
+.venv\\Scripts\\activate
+```
+
+**Versión Linux**
+```
+python3 -m venv .venv
+```
+```
+source .venv/bin/activate
+```
+
+4- Al acabar el tercer paso, tienes que instalar las dependencias necesarias para poder acceder a la interfaz gráfica, haciendo el siguente comando:
+```
+pip3 install -r requirements.txt
+```
+
+5- Cuando quieras iniciar la aplicación, solo tienes que hacer este ultimo comando: ```reflex run```.
+# **Metodologia**
 
 El orden de la elaboración del proyecto fue por las cosas que a primera vista pensarias que son las mas indispensables que deberia tener el programa para poder funcionar. Por lo que para empezar realizariamos el tablero para poder ver asi un avance donde pudieramos ver los personajes. Lo que seguimos implementando fue por la parte visible ya que sin una celda donde el usuario pudiera redactar sus cuestiones al respecto del individuo a adivinar este programa no tendria sentido. 
 
 Una vez realizado lo minimo indispensable para jugar el juego a nivel de vista decidimos formar la logica con la cual el usuario podria interactuar usando el chat para realizar sus cuestiones y asi poder jugar. 
+
+
     
-Descripcion tecnica
+# **Descripcion tecnica**
 
     Historial de usuario
 
