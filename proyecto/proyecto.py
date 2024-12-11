@@ -314,55 +314,6 @@ def tablero():
     )
 
 
-#def tablero():
-#    return rx.grid(
-#        rx.card("Alex",rx.image(src=r"Alex.png")),
-#        rx.card("Alfred",rx.image(src=r"Alfred.png")),
-#        rx.card("Anita",rx.image(src=r"Anita.png")),
-#        rx.card("Anne",rx.image(src=r"Anne.png")),
-#        rx.card("Bernard",rx.image(src=r"Bernard.png")),
-#        rx.card("Bill",rx.image(src=r"Bill.png")),
-#        rx.card("Charles",rx.image(src=r"Charles.png")),
-#        rx.card("Claire",rx.image(src=r"Claire.png")),
-#        rx.card("David",rx.image(src=r"David.png")),
-#        rx.card("Eric",rx.image(src=r"Eric.png")),
-#        rx.card("Frans",rx.image(src=r"Frans.png")),
-#        rx.card("George",rx.image(src=r"George.png")),
-#        rx.card("Herman",rx.image(src=r"Herman.png")),
-#        rx.card("Joe",rx.image(src=r"Joe.png")),
-#        rx.card("Maria",rx.image(src=r"Maria.png")),
-#        rx.card("Max",rx.image(src=r"Max.png")),
-#        rx.card("Paul",rx.image(src=r"Paul.png")),
-#        rx.card("Peter",rx.image(src=r"Peter.png")),
-#        rx.card("Philip",rx.image(src=r"Philip.png")),
-#        rx.card("Richard",rx.image(src=r"Richard.png")),
-#        rx.card("Robert",rx.image(src=r"Robert.png")),
-#        rx.card("Sam",rx.image(src=r"Sam.png")),
-#        rx.card("Susan",rx.image(src=r"Susan.png")),
-#        rx.card("Tom",rx.image(src=r"Tom.png")),
-#        
-#        size="20",
-#        columns="8",
-#        spacing="4",
-#        width="100%",
-#        align = "center",
-#    )
-
-#def input() -> rx.Component:
-#    return rx.hstack(
-#        rx.input(placeholder="Haz una pregunta"),
-#        rx.button("Enviar"),
-#        align = "center",
-#    )
-
-
-#def indexx() -> rx.Component:
-#    return rx.container(
-#        chat(),
-#        action_bar(),
-#    )
-#
-
 def personaje():
     return rx.popover.root(
         rx.popover.trigger(
@@ -420,42 +371,6 @@ def form_input1():
         ),
         width="50%",
     )
-
-
-
-
-
-#def pregunta(form_input1):
-#    pregunta = pregunta.lower()
-#    for palabra in pregunta.split():  # Dividir la pregunta en palabras
-#        if palabra in caracteristicas_unicas:  # Comprobar si la palabra está en la lista de características
-#            if palabra in Personajes[personaje_maquina]:  # Verificar si el personaje tiene la característica
-#                print("Si")
-#            else:
-#                print("No")
-#            break  # Salir del bucle al encontrar una coincidencia válida
-#        else:
-#            continue
-
-
-
-
-#def chat() -> rx.Component:
-#    return rx.container(
-#        rx.box(
-#            "Es hombre?",
-#            # The user's question is on the right.
-#            text_align="right",
-#        ),
-#        rx.box(
-#            "Si",
-#            # The answer is on the left.
-#            text_align="left",
-#        ),
-#    )
-
-
-
 
 def qa(question: str, answer: str) -> rx.Component:
     return rx.box(
