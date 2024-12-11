@@ -73,7 +73,7 @@ Una vez realizado lo minimo indispensable para jugar el juego a nivel de vista d
 Esta aplicación la cual utiliza el Framework de Reflex, está inspirada en el juego de ¿Quién es quién?
 ## **Requisitos funcionales/no funcionales, NOT LIST**
 ## **Diagrama de casos de uso**
-![Use Cases](assets/diagrama.png)
+![Casos de uso](assets/diagrama.png)
 
 ## **Arquitectura de la aplicación**
 Proyecto dividido entre las siguente carpetas:
