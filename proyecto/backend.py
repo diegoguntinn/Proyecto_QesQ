@@ -33,7 +33,7 @@ Personajes = {
 # Selección aleatoria de personaje por la máquina
 #personaje_maquina = random.choice(list(Personajes.keys()))
 
-caracteristicas_unicas = ["alex","charles","richard","sam","peter","tom","susan","robert","maria","philip","joe","paul","max","hernan","george","frans","eric","david","claire","bernard","bill","anne","anita","alfred",'barba', 'barba marron', 'barba rubia', 'bigote', 'bigote rubio', 'calvo', 'cara alargada', 'gafas azules', 'gafas grises', 'gafas negras', 'gafas rojas', 'gordo', 'hombre', 'labios grandes', 'lazitos', 'mayor', 'menton', 'medio calvo', 'mujer', 'nariz grande', 'ojos azules', 'ojos marrones', 'pelo blanco', 'pelo blanco y largo', 'pelo largo', 'pelo marron', 'pelo rizo', 'pelo rubio', 'peliroja', 'pelirojo', 'rubia', 'sombrero', 'sombrero flores', 'sonrojada', 'sonrojado', 'triste']
+caracteristicas_unicas = ["alex","charles","richard","sam","peter","tom","susan","robert","maria","philip","joe","paul","max","hernan","george","frans","eric","david","claire","bernard","bill","anne","anita","alfred",'barba', 'bigote', 'calvo', 'gafas','gordo', 'hombre', 'lazitos', 'mayor', 'menton', 'mujer', 'blanco', 'largo', 'marron', ' rubio', 'peliroja', 'pelirojo', 'rubia', 'sombrero', 'sonrojada', 'sonrojado', 'triste','negro']
 # Fragmento del bucle que evalúa palabra por palabra
 
 #def pregunta(form_input1):
