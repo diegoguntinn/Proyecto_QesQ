@@ -2,7 +2,7 @@
 
 ## **Introduccion**
 
- El proyecto consistia en la creación del popular juego de Quien es Quien, el cual consiste a grandes rasgos en poder adivinar el personaje de tu rival antes de que este adivine el que tu has seleccionado. En este proyecto el rival es una maquina la cual no juega y solo se limitara a responder las preguntas que tu le formules para poder adivinar el personaje que habra seleccionado aleatoriamente previamnente la maquina.
+ El proyecto consistia en la creación del popular juego de Quien es Quien, el cual consiste a grandes rasgos en poder adivinar el personaje de tu rival antes de que este adivine el que tu has seleccionado. En este proyecto el rival es una maquina la cual no juega y solo se limitara a responder las preguntas que tu le formules para poder adivinar el personaje que habra seleccionado aleatoriamente previamente la maquina.
     
 Este proyecto llevado acabo por Javier Casal y Diego González, estudiantes de primer año de DAM (Desarrollo de Aplicaciones Multiplataforma) en el IES de TEIS con una preparación de entre dos y tres meses sobre python; llevaron acabo este proyecto basado en python con el uso de un framwork llamado "reflex" del cual no tenian conocimiento ninguno hasta la puesta en marcha de este proyecto.
     
@@ -94,25 +94,38 @@ Proyecto dividido entre las siguente carpetas:
 - **/rxconfig.py** : Archivo de la configuración de Reflex.
 - **/pytest.ini** : Ubicación de los marks de pytest.
 
-# **Diseño**
-## **Diagrama de Componentes**
+## **Diseño**
+### **Diagrama de Componentes**
 ![Diseño de componente](assets/component_componentes.png)
 
+## **Implementación**
+### **Tecnologías y Herramientas Elegidas**
+- [Reflex](https://reflex.dev/)
+    - Framework con el cual hemos tenido que trabaja rara poder realizar el proyecto.
+- [Python](https://www.python.org/)
+    - [Pytest](https://docs.pytest.org/en/stable/) 
+        - Librerías necesarias para realizar los casos test.
 
-    Historial de usuario
+### **Backend**
+La lógica está guardada en 3 archivos backend, el archivo **backend.py** y el archivo **state.py**, dentro de ellos encontraremos la logica que hace que funcione nuestra aplicacion y el archivo **/casos_test** donde estan todos los casos test.
 
-    Arquitectura de la apliacion  Los componenetes q usuamos en reflex
-Diseño
-    Componentes 
-        explicacion de los ficheros 
-Implementacion
-    Tecnologias 
-        usadas y por que refelx y por que.
-    Backend 
-    Frontend
-Pruebas
-    Modulos programdos que pasan los casos test
-Comparacion Temporal 
-    Como gestionamos el tiempo del proytecto y tiempos invertidos en cada cosa.
-Conclusion
-    mejoras dificultades y resumen.
+### **Frontend**
+Dentro de la carpeta **/proyecto** estan el archivo **proyecto.py**, el cual tiene la pagina entre sus lineas de codigo
+
+
+## **Análisis del tiempo invertido**
+### **Graficas de tiempo**
+![grafica](assets/grafica.png)
+![grafica2](assets/grafica2.png)
+![grafica3](assets/grafica3.png)
+
+## **Conclusiones**
+Cabe recalcar que aún faltan cosas por implementar en este proyecto pero podemos presenciar novedades como los 2 modos de dificultad.
+
+En general ha sido una experiencia interesante.
+## **Posibles mejoras**
+En un futuro mejoraremos el estilo del Frontend para que pueda ser mucho más aceptable visualmente, optimizar a lo mejor la lógica detrás del juego e implementar branches de Git Flow (hotfix, release...)
+## **Dificultades**
+En general nuestro mayor problema fueron las imagenes a la hora de ocultarlas al darle click en cada una.
+
+Mención honorable a los casos test.
