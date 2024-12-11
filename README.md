@@ -1,29 +1,28 @@
 ﻿# Proyecto_QesQ
 
-# **Introduccion**
+## **Introduccion**
 
  El proyecto consistia en la creación del popular juego de Quien es Quien, el cual consiste a grandes rasgos en poder adivinar el personaje de tu rival antes de que este adivine el que tu has seleccionado. En este proyecto el rival es una maquina la cual no juega y solo se limitara a responder las preguntas que tu le formules para poder adivinar el personaje que habra seleccionado aleatoriamente previamnente la maquina.
     
 Este proyecto llevado acabo por Javier Casal y Diego González, estudiantes de primer año de DAM (Desarrollo de Aplicaciones Multiplataforma) en el IES de TEIS con una preparación de entre dos y tres meses sobre python; llevaron acabo este proyecto basado en python con el uso de un framwork llamado "reflex" del cual no tenian conocimiento ninguno hasta la puesta en marcha de este proyecto.
     
-# **Manual**
+## **Manual**
 
 Que es lo que necesitaremos para poder jugar este juego, en primer lugar deveremos instalar las funciones necesarias q tendreis disponible en este proyecto como puede ser el propio codigo del proyecto y los recursos necesarios como pueden ser las fotos que se utilizan para los personajes, estos serian los requisitios para poder acceder al juego el cual se desenvolvera en un entorno web que nos proporcina reflex.
     
 A nivel de nuestro propio equipo no necesitaremos demasiadas especificaciones ya que solo  necesitaremos el espacio suficiente para poner ejecutar el codigo y el propio reflex para que este pueda ser usado. 
 
 
-## **Pre-requisitos**
-1 -   `Git`
-2 -   `Python3`
-3 -   `pip3`
-4 -   `reflex`
-5 -   `pytest`
-6 -   `coverage`
+### **Pre-requisitos**
+-   `Git`
+-   `Python3`
+-   `pip3`
+-   `reflex`
+-   `pytest`
 
 
 
-## **Instalación**
+### **Instalación**
 1- Para instalar este repositorio y acceder al juego primero tienes que crear la carpeta donde quieres guardar el repositorio, para hacer eso, sigue los siguentes comandos:
 ```
 mkdir ./nombre_applicacion
@@ -62,7 +61,7 @@ pip3 install -r requirements.txt
 ```
 
 5- Cuando quieras iniciar la aplicación, solo tienes que hacer este ultimo comando: ```reflex run```.
-# **Metodologia**
+## **Metodologia**
 
 El orden de la elaboración del proyecto fue por las cosas que a primera vista pensarias que son las mas indispensables que deberia tener el programa para poder funcionar. Por lo que para empezar realizariamos el tablero para poder ver asi un avance donde pudieramos ver los personajes. Lo que seguimos implementando fue por la parte visible ya que sin una celda donde el usuario pudiera redactar sus cuestiones al respecto del individuo a adivinar este programa no tendria sentido. 
 
@@ -70,7 +69,32 @@ Una vez realizado lo minimo indispensable para jugar el juego a nivel de vista d
 
 
     
-# **Descripcion tecnica**
+## **Descripción Técnica**
+Esta aplicación la cual utiliza el Framework de Reflex, está inspirada en el juego de ¿Quién es quién?
+## **Requisitos funcionales/no funcionales, NOT LIST**
+## **Diagrama de casos de uso**
+![Use Cases](assets/diagrama.png)
+
+## **Arquitectura de la aplicación**
+Proyecto dividido entre las siguente carpetas:
+
+*Frontend*
+- **/proyecto** : Carpeta donde se encuentra los archivos para el funcionamiento de las páginas y su lógica.
+- **/proyecto/proyecto.py** : Página en la que se jugara al ¿Quien es Quien?.
+- 
+*Backend*
+- **/proyecto/casos_test** : Ubicación de los casos test.
+- **/proyecto/state.py** : Archivo que cambia la variable question para que funcione el estado pregunta/respuesta.
+- **/proyecto/backend.py** : Archivo que especifica las caracteristicas de cada personaje.
+- **/proyecto/style.py** : Archivo que da estilo a los componentes.
+- 
+*Variado*
+- **/assets** : Carpeta con las imagenes necesarias.
+- **/requirements.txt** : Archivo con las dependencias.
+- **/rxconfig.py** : Archivo de la configuración de Reflex.
+- **/pytest.ini** : Ubicación de los marks de pytest.
+
+
 
     Historial de usuario
 
