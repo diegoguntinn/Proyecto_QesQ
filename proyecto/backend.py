@@ -30,30 +30,6 @@ Personajes = {
     "Tom": ["hombre", "negro", "calvo", "gafas", "alargada"],
 }
 
-# Selección aleatoria de personaje por la máquina
-#personaje_maquina = random.choice(list(Personajes.keys()))
 
-caracteristicas_unicas = ["alex","charles","richard","sam","peter","tom","susan","robert","maria","philip","joe","paul","max","hernan","george","frans","eric","david","claire","bernard","bill","anne","anita","alfred",'barba', 'bigote', 'calvo', 'gafas','gordo', 'hombre', 'lazitos', 'mayor', 'menton', 'mujer', 'blanco', 'largo', 'marron', ' rubio', 'peliroja', 'pelirojo', 'rubia', 'sombrero', 'sonrojada', 'sonrojado', 'triste','negro']
-# Fragmento del bucle que evalúa palabra por palabra
 
-#def pregunta(form_input1):
-#    pregunta = pregunta.lower()
-#    for palabra in pregunta.split():  # Dividir la pregunta en palabras
-#        if palabra in caracteristicas_unicas:  # Comprobar si la palabra está en la lista de características
-#            if palabra in Personajes[personaje_maquina]:  # Verificar si el personaje tiene la característica
-#                print("Si")
-#            else:
-#                print("No")
-#            break  # Salir del bucle al encontrar una coincidencia válida
-#        else:
-#            continue
-def answer():    
-    pregunta = 'es hombre?'
-    # Verificar si alguna palabra o frase está en la historia
-    resultados = [palabra for palabra in caracteristicas_unicas if palabra in pregunta]
-
-    # Imprimir las palabras/frases encontradas
-    if resultados:
-        print("Si", resultados)
-    else:
-        print("No", resultados)
+#caracteristicas_unicas = ["alex","charles","richard","sam","peter","tom","susan","robert","maria","philip","joe","paul","max","hernan","george","frans","eric","david","claire","bernard","bill","anne","anita","alfred",'barba', 'bigote', 'calvo', 'gafas','gordo', 'hombre', 'lazitos', 'mayor', 'menton', 'mujer', 'blanco', 'largo', 'marron', 'rubio', 'peliroja', 'pelirojo', 'rubia', 'sombrero', 'sonrojada', 'sonrojado', 'triste','negro']

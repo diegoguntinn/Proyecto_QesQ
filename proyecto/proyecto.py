@@ -3,12 +3,15 @@ import os
 import random
 import rxconfig as config
 
+
 from proyecto import style
 from proyecto.state import State
 from proyecto.backend import Personajes
 
+
+
 class ClassState(rx.State):
-    img_src_alex: str = "Alex.png"  # Initial image source
+    img_src_alex: str = "Alex.png"  # imagen incial
     img_src_alfred: str = "Alfred.png"
     img_src_anita: str = "Anita.png"
     img_src_anne: str = "Anne.png"
@@ -34,12 +37,11 @@ class ClassState(rx.State):
     img_src_tom: str = "Tom.png"
 
 
-    def toggle_image_alex(alex):
-        # Toggle the image source
+
+    def toggle_image_alex(alex):    #funcion de cambiar la imagen
         alex.img_src_alex = "XAlex.png" if alex.img_src_alex == "Alex.png" else "Alex.png"
     
     def toggle_image_alfred(alfred):
-        # Toggle the image source
         alfred.img_src_alfred = "XAlfred.png" if alfred.img_src_alfred == "Alfred.png" else "Alfred.png"
 
     def toggle_image_anita(anita):  
@@ -110,21 +112,20 @@ class ClassState(rx.State):
 
 
 
-
 def tablero():
     return rx.grid(
         rx.card(
             rx.box(
                 "Alex",
-                text_align="center",  # Centra el texto horizontalmente
+                text_align="center",
             ),
-            rx.image(src=ClassState.img_src_alex),  # Bind the image source to state
-            on_click=ClassState.toggle_image_alex,  # Add the click event handler
+            rx.image(src=ClassState.img_src_alex),  # adjutna la imagen al estado de la imagen
+            on_click=ClassState.toggle_image_alex,  # cuando haces click, llama a la funcion de cambiar la imagen
             ),
         rx.card(
             rx.box(
                 "Alfred",
-                text_align="center",  # Centra el texto horizontalmente
+                text_align="center",
             ),
             rx.image(src=ClassState.img_src_alfred),
             on_click=ClassState.toggle_image_alfred,
@@ -132,7 +133,7 @@ def tablero():
         rx.card(
             rx.box(
                 "Anita",
-                text_align="center",  # Centra el texto horizontalmente
+                text_align="center",
             ),
             rx.image(src=ClassState.img_src_anita),
             on_click=ClassState.toggle_image_anita,
@@ -140,7 +141,7 @@ def tablero():
         rx.card(
             rx.box(
                 "Anne",
-                text_align="center",  # Centra el texto horizontalmente
+                text_align="center",
             ),
             rx.image(src=ClassState.img_src_anne),
             on_click=ClassState.toggle_image_anne,
@@ -148,7 +149,7 @@ def tablero():
         rx.card(
             rx.box(
                 "Bernard",
-                text_align="center",  # Centra el texto horizontalmente
+                text_align="center",
             ),
             rx.image(src=ClassState.img_src_bernard),
             on_click=ClassState.toggle_image_bernard,
@@ -156,7 +157,7 @@ def tablero():
         rx.card(
             rx.box(
                 "Bill",
-                text_align="center",  # Centra el texto horizontalmente
+                text_align="center",
             ),
             rx.image(src=ClassState.img_src_bill),
             on_click=ClassState.toggle_image_bill,
@@ -164,7 +165,7 @@ def tablero():
         rx.card(
             rx.box(
                 "Charles",
-                text_align="center",  # Centra el texto horizontalmente
+                text_align="center",
             ),
             rx.image(src=ClassState.img_src_charles),
             on_click=ClassState.toggle_image_charles,
@@ -172,7 +173,7 @@ def tablero():
         rx.card(
             rx.box(
                 "Claire",
-                text_align="center",  # Centra el texto horizontalmente
+                text_align="center",
             ),
             rx.image(src=ClassState.img_src_claire),
             on_click=ClassState.toggle_image_claire,
@@ -180,7 +181,7 @@ def tablero():
         rx.card(
             rx.box(
                 "David",
-                text_align="center",  # Centra el texto horizontalmente
+                text_align="center",
             ),
             rx.image(src=ClassState.img_src_david),
             on_click=ClassState.toggle_image_david,
@@ -188,7 +189,7 @@ def tablero():
         rx.card(
             rx.box(
                 "Eric",
-                text_align="center",  # Centra el texto horizontalmente
+                text_align="center",
             ),
             rx.image(src=ClassState.img_src_eric),
             on_click=ClassState.toggle_image_eric,
@@ -196,7 +197,7 @@ def tablero():
         rx.card(
             rx.box(
                 "Frans",
-                text_align="center",  # Centra el texto horizontalmente
+                text_align="center",
             ),
             rx.image(src=ClassState.img_src_frans),
             on_click=ClassState.toggle_image_frans,
@@ -204,7 +205,7 @@ def tablero():
         rx.card(
             rx.box(
                 "George",
-                text_align="center",  # Centra el texto horizontalmente
+                text_align="center",
             ),
             rx.image(src=ClassState.img_src_george),
             on_click=ClassState.toggle_image_george,
@@ -212,7 +213,7 @@ def tablero():
         rx.card(
             rx.box(
                 "Herman",
-                text_align="center",  # Centra el texto horizontalmente
+                text_align="center",
             ),
             rx.image(src=ClassState.img_src_herman),
             on_click=ClassState.toggle_image_herman,
@@ -220,7 +221,7 @@ def tablero():
         rx.card(
             rx.box(
                 "Joe",
-                text_align="center",  # Centra el texto horizontalmente
+                text_align="center",
             ),
             rx.image(src=ClassState.img_src_joe),
             on_click=ClassState.toggle_image_joe,
@@ -228,7 +229,7 @@ def tablero():
         rx.card(
             rx.box(
                 "Maria",
-                text_align="center",  # Centra el texto horizontalmente
+                text_align="center",
             ),
             rx.image(src=ClassState.img_src_maria),
             on_click=ClassState.toggle_image_maria,
@@ -236,7 +237,7 @@ def tablero():
         rx.card(
             rx.box(
                 "Max",
-                text_align="center",  # Centra el texto horizontalmente
+                text_align="center",
             ),
             rx.image(src=ClassState.img_src_max),
             on_click=ClassState.toggle_image_max,
@@ -244,7 +245,7 @@ def tablero():
         rx.card(
             rx.box(
                 "Paul",
-                text_align="center",  # Centra el texto horizontalmente
+                text_align="center",
             ),
             rx.image(src=ClassState.img_src_paul),
             on_click=ClassState.toggle_image_paul,
@@ -252,7 +253,7 @@ def tablero():
         rx.card(
             rx.box(
                 "Peter",
-                text_align="center",  # Centra el texto horizontalmente
+                text_align="center",
             ),
             rx.image(src=ClassState.img_src_peter),
             on_click=ClassState.toggle_image_peter,
@@ -260,7 +261,7 @@ def tablero():
         rx.card(
             rx.box(
                 "Philip",
-                text_align="center",  # Centra el texto horizontalmente
+                text_align="center",
             ),
             rx.image(src=ClassState.img_src_philip),
             on_click=ClassState.toggle_image_philip,
@@ -268,7 +269,7 @@ def tablero():
         rx.card(
             rx.box(
                 "Richard",
-                text_align="center",  # Centra el texto horizontalmente
+                text_align="center",
             ),
             rx.image(src=ClassState.img_src_richard),
             on_click=ClassState.toggle_image_richard,
@@ -276,7 +277,7 @@ def tablero():
         rx.card(
             rx.box(
                 "Robert",
-                text_align="center",  # Centra el texto horizontalmente
+                text_align="center",
             ),
             rx.image(src=ClassState.img_src_robert),
             on_click=ClassState.toggle_image_robert,
@@ -284,7 +285,7 @@ def tablero():
         rx.card(
             rx.box(
                 "Sam",
-                text_align="center",  # Centra el texto horizontalmente
+                text_align="center",
             ),
             rx.image(src=ClassState.img_src_sam),
             on_click=ClassState.toggle_image_sam,
@@ -292,7 +293,7 @@ def tablero():
         rx.card(
             rx.box(
                 "Susan",
-                text_align="center",  # Centra el texto horizontalmente
+                text_align="center",
             ),
             rx.image(src=ClassState.img_src_susan),
             on_click=ClassState.toggle_image_susan,
@@ -300,7 +301,7 @@ def tablero():
         rx.card(
             rx.box(
                 "Tom",
-                text_align="center",  # Centra el texto horizontalmente
+                text_align="center",
             ),
             rx.image(src=ClassState.img_src_tom),
             on_click=ClassState.toggle_image_tom,
@@ -314,56 +315,8 @@ def tablero():
     )
 
 
-#def tablero():
-#    return rx.grid(
-#        rx.card("Alex",rx.image(src=r"Alex.png")),
-#        rx.card("Alfred",rx.image(src=r"Alfred.png")),
-#        rx.card("Anita",rx.image(src=r"Anita.png")),
-#        rx.card("Anne",rx.image(src=r"Anne.png")),
-#        rx.card("Bernard",rx.image(src=r"Bernard.png")),
-#        rx.card("Bill",rx.image(src=r"Bill.png")),
-#        rx.card("Charles",rx.image(src=r"Charles.png")),
-#        rx.card("Claire",rx.image(src=r"Claire.png")),
-#        rx.card("David",rx.image(src=r"David.png")),
-#        rx.card("Eric",rx.image(src=r"Eric.png")),
-#        rx.card("Frans",rx.image(src=r"Frans.png")),
-#        rx.card("George",rx.image(src=r"George.png")),
-#        rx.card("Herman",rx.image(src=r"Herman.png")),
-#        rx.card("Joe",rx.image(src=r"Joe.png")),
-#        rx.card("Maria",rx.image(src=r"Maria.png")),
-#        rx.card("Max",rx.image(src=r"Max.png")),
-#        rx.card("Paul",rx.image(src=r"Paul.png")),
-#        rx.card("Peter",rx.image(src=r"Peter.png")),
-#        rx.card("Philip",rx.image(src=r"Philip.png")),
-#        rx.card("Richard",rx.image(src=r"Richard.png")),
-#        rx.card("Robert",rx.image(src=r"Robert.png")),
-#        rx.card("Sam",rx.image(src=r"Sam.png")),
-#        rx.card("Susan",rx.image(src=r"Susan.png")),
-#        rx.card("Tom",rx.image(src=r"Tom.png")),
-#        
-#        size="20",
-#        columns="8",
-#        spacing="4",
-#        width="100%",
-#        align = "center",
-#    )
 
-#def input() -> rx.Component:
-#    return rx.hstack(
-#        rx.input(placeholder="Haz una pregunta"),
-#        rx.button("Enviar"),
-#        align = "center",
-#    )
-
-
-#def indexx() -> rx.Component:
-#    return rx.container(
-#        chat(),
-#        action_bar(),
-#    )
-#
-
-def personaje():
+def personaje():    # crea bon con respuesta
     return rx.popover.root(
         rx.popover.trigger(
             rx.button("Respuesta"),
@@ -371,7 +324,6 @@ def personaje():
         rx.popover.content(
             rx.flex(
                 rx.image(src=State.personaje_maquina + ".png"),
-                #rx.text(random.choice(list(Personajes.keys()))),
                 rx.popover.close(
                     rx.button("Close"),
                 ),
@@ -380,80 +332,6 @@ def personaje():
             ),
         ),
     )
-
-class FormInputState(rx.State):
-    form_data: dict = {}
-
-    @rx.event
-    def handle_submit(self, form_data: dict):
-        """Handle the form submit."""
-        self.form_data = form_data
-
-
-def form_input1():
-    return rx.card(
-        rx.vstack(
-            rx.heading("Hacer Preguntas"),
-            rx.form.root(
-                rx.hstack(
-                    rx.input(
-                        name="input",
-                        placeholder="Escriba Pregunta",
-                        type="text",
-                        required=True,
-                    ),
-                    rx.button("Preguntar", type="submit"),
-                    width="100%",
-                ),
-                on_submit=FormInputState.handle_submit,
-                reset_on_submit=True,
-            ),
-            rx.divider(),
-            rx.hstack(
-                rx.heading("Results:"),
-                rx.badge(
-                    FormInputState.form_data.to_string()
-                ),
-            ),
-            align_items="left",
-            width="100%",
-        ),
-        width="50%",
-    )
-
-
-
-
-
-#def pregunta(form_input1):
-#    pregunta = pregunta.lower()
-#    for palabra in pregunta.split():  # Dividir la pregunta en palabras
-#        if palabra in caracteristicas_unicas:  # Comprobar si la palabra está en la lista de características
-#            if palabra in Personajes[personaje_maquina]:  # Verificar si el personaje tiene la característica
-#                print("Si")
-#            else:
-#                print("No")
-#            break  # Salir del bucle al encontrar una coincidencia válida
-#        else:
-#            continue
-
-
-
-
-#def chat() -> rx.Component:
-#    return rx.container(
-#        rx.box(
-#            "Es hombre?",
-#            # The user's question is on the right.
-#            text_align="right",
-#        ),
-#        rx.box(
-#            "Si",
-#            # The answer is on the left.
-#            text_align="left",
-#        ),
-#    )
-
 
 
 
@@ -465,6 +343,7 @@ def qa(question: str, answer: str) -> rx.Component:
     )
 
 
+
 def chat() -> rx.Component:
     return rx.box(
         rx.foreach(
@@ -472,6 +351,8 @@ def chat() -> rx.Component:
             lambda messages: qa(messages[0], messages[1]),
         )
     )
+
+
 
 def action_bar() -> rx.Component:
     return rx.hstack(
@@ -488,7 +369,8 @@ def action_bar() -> rx.Component:
     )
 
 
-def index() -> rx.Component:
+
+#def index() -> rx.Component:
     return rx.container(chat())
 
 
@@ -499,10 +381,7 @@ def index() -> rx.Component:
         rx.vstack(
             rx.color_mode.button(position="top-right"),
             tablero(),
-        #    indexx(),
-        #    input(),
             personaje(),
-        #    form_input1(),
             chat(),
             action_bar(),
         #    index(),

@@ -1,7 +1,7 @@
 # style.py
 import reflex as rx
 
-# Common styles for questions and answers.
+#pregunta/respuesta.
 shadow = "rgba(0, 0, 0, 0.15) 0px 2px 8px"
 chat_margin = "20%"
 message_style = dict(
@@ -13,7 +13,7 @@ message_style = dict(
     display="inline-block",
 )
 
-# Set specific styles for questions and answers.
+#pregunta/respuesta para preguntas especificas.
 question_style = message_style | dict(
     margin_left=chat_margin,
     background_color=rx.color("gray", 4),
@@ -23,7 +23,7 @@ answer_style = message_style | dict(
     background_color=rx.color("accent", 8),
 )
 
-# Styles for the action bar.
+#action bar.
 input_style = dict(
     border_width="1px",
     padding="0.5em",
