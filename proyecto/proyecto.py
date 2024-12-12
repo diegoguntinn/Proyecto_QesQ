@@ -357,12 +357,12 @@ def chat() -> rx.Component:
 def action_bar() -> rx.Component:
     return rx.hstack(
         rx.input(
-            placeholder="Ask a question",
+            placeholder="Hacer pregunta",
             on_change=State.set_question,
             style=style.input_style,
         ),
         rx.button(
-            "Ask",
+            "Preguntar",
             on_click=State.answer,
             style=style.button_style,
         ),
@@ -370,8 +370,25 @@ def action_bar() -> rx.Component:
 
 
 
-#def index() -> rx.Component:
-    return rx.container(chat())
+def reiniciar():
+    return rx.popover.root(
+            rx.popover.trigger(
+                rx.button(
+                    "Volver a jugar", 
+                    color_scheme="red"
+                    ),
+                ),
+            rx.popover.content(
+                rx.flex(
+                    rx.text(
+                        "Proximamente"
+                        ),
+                    ),
+                    direction="column",
+                    spacing="3",
+                ),
+            ),
+        
 
 
 
@@ -384,7 +401,8 @@ def index() -> rx.Component:
             personaje(),
             chat(),
             action_bar(),
-        #    index(),
+            reiniciar(),
+
 
         )
     )

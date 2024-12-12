@@ -9,10 +9,40 @@ import { jsx, keyframes } from "@emotion/react"
 import { MoonIcon as LucideMoonIcon, SunIcon as LucideSunIcon, WifiOffIcon as LucideWifiOffIcon } from "lucide-react"
 import { toast, Toaster } from "sonner"
 import env from "$/env.json"
-import { Box as RadixThemesBox, Button as RadixThemesButton, Card as RadixThemesCard, Container as RadixThemesContainer, Flex as RadixThemesFlex, Grid as RadixThemesGrid, IconButton as RadixThemesIconButton, Popover as RadixThemesPopover, TextField as RadixThemesTextField } from "@radix-ui/themes"
+import { Box as RadixThemesBox, Button as RadixThemesButton, Card as RadixThemesCard, Container as RadixThemesContainer, Flex as RadixThemesFlex, Grid as RadixThemesGrid, IconButton as RadixThemesIconButton, Popover as RadixThemesPopover, Text as RadixThemesText, TextField as RadixThemesTextField } from "@radix-ui/themes"
 import NextHead from "next/head"
 
 
+
+export function Fragment_9017984ada32ffa55f5d2870ebd3c887 () {
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+
+  return (
+    <Fragment>
+
+{isTrue((connectErrors.length > 0)) ? (
+  <Fragment>
+
+<LucideWifiOffIcon css={({ ["color"] : "crimson", ["zIndex"] : 9999, ["position"] : "fixed", ["bottom"] : "33px", ["right"] : "33px", ["animation"] : (pulse+" 1s infinite") })} size={32}/>
+</Fragment>
+) : (
+  <Fragment/>
+)}
+</Fragment>
+  )
+}
+
+export function Img_bc96033e17928814fe15a4df251a442d () {
+  const reflex___state____state__proyecto___proyecto____class_state = useContext(StateContexts.reflex___state____state__proyecto___proyecto____class_state)
+
+
+
+  return (
+    <img src={reflex___state____state__proyecto___proyecto____class_state.img_src_charles}/>
+  )
+}
 
 export function Img_60b1ae80396aec14259ef035f28a75e5 () {
   const reflex___state____state__proyecto___proyecto____class_state = useContext(StateContexts.reflex___state____state__proyecto___proyecto____class_state)
@@ -24,13 +54,81 @@ export function Img_60b1ae80396aec14259ef035f28a75e5 () {
   )
 }
 
-export function Img_b85c01084dc2033a9556d64ce0c49572 () {
+export function Img_bbdedb9ee352b8f3a9f2b37356898c4b () {
+  const reflex___state____state__proyecto___state____state = useContext(StateContexts.reflex___state____state__proyecto___state____state)
+
+
+
+  return (
+    <img src={(reflex___state____state__proyecto___state____state.personaje_maquina+".png")}/>
+  )
+}
+
+export function Card_770bbc913d7a08e242fd9041ec5e2908 () {
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+  const on_click_6d1475f18d789b38ea7aeb92f1fb0aab = useCallback(((...args) => (addEvents([(Event("reflex___state____state.proyecto___proyecto____class_state.toggle_image_eric", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+  return (
+    <RadixThemesCard onClick={on_click_6d1475f18d789b38ea7aeb92f1fb0aab}>
+
+<RadixThemesBox css={({ ["textAlign"] : "center" })}>
+
+{"Eric"}
+</RadixThemesBox>
+<Img_9a2956f6581eb4cfcf296da22eb48c73/>
+</RadixThemesCard>
+  )
+}
+
+export function Img_08efbf82397233d74561ee1421e9f3a2 () {
   const reflex___state____state__proyecto___proyecto____class_state = useContext(StateContexts.reflex___state____state__proyecto___proyecto____class_state)
 
 
 
   return (
-    <img src={reflex___state____state__proyecto___proyecto____class_state.img_src_peter}/>
+    <img src={reflex___state____state__proyecto___proyecto____class_state.img_src_alfred}/>
+  )
+}
+
+export function Img_e7d6749187ad9a7f43a51e2242f93b23 () {
+  const reflex___state____state__proyecto___proyecto____class_state = useContext(StateContexts.reflex___state____state__proyecto___proyecto____class_state)
+
+
+
+  return (
+    <img src={reflex___state____state__proyecto___proyecto____class_state.img_src_susan}/>
+  )
+}
+
+export function Img_23632658ca6fcb91b16e857461fbaaf6 () {
+  const reflex___state____state__proyecto___proyecto____class_state = useContext(StateContexts.reflex___state____state__proyecto___proyecto____class_state)
+
+
+
+  return (
+    <img src={reflex___state____state__proyecto___proyecto____class_state.img_src_herman}/>
+  )
+}
+
+export function Img_e7a368befe6ff4f9f81154b9ccfa422a () {
+  const reflex___state____state__proyecto___proyecto____class_state = useContext(StateContexts.reflex___state____state__proyecto___proyecto____class_state)
+
+
+
+  return (
+    <img src={reflex___state____state__proyecto___proyecto____class_state.img_src_george}/>
+  )
+}
+
+export function Img_1ab668c6c84805b606515606c7d9373f () {
+  const reflex___state____state__proyecto___proyecto____class_state = useContext(StateContexts.reflex___state____state__proyecto___proyecto____class_state)
+
+
+
+  return (
+    <img src={reflex___state____state__proyecto___proyecto____class_state.img_src_tom}/>
   )
 }
 
@@ -48,206 +146,6 @@ export function Card_75a29a20322b7193df980aeb0fc6d2dc () {
 {"George"}
 </RadixThemesBox>
 <Img_e7a368befe6ff4f9f81154b9ccfa422a/>
-</RadixThemesCard>
-  )
-}
-
-export function Card_7acb00886815bc0142b32ba7bc9cee63 () {
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-  const on_click_9d0ee9b58aacc7fb06cd6a9629d61dda = useCallback(((...args) => (addEvents([(Event("reflex___state____state.proyecto___proyecto____class_state.toggle_image_max", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-  return (
-    <RadixThemesCard onClick={on_click_9d0ee9b58aacc7fb06cd6a9629d61dda}>
-
-<RadixThemesBox css={({ ["textAlign"] : "center" })}>
-
-{"Max"}
-</RadixThemesBox>
-<Img_43b8798ad4cd02642e425af32bc1f27b/>
-</RadixThemesCard>
-  )
-}
-
-export function Img_1e643d66e8204e8483e944a736692aca () {
-  const reflex___state____state__proyecto___proyecto____class_state = useContext(StateContexts.reflex___state____state__proyecto___proyecto____class_state)
-
-
-
-  return (
-    <img src={reflex___state____state__proyecto___proyecto____class_state.img_src_philip}/>
-  )
-}
-
-export function Img_75226fcd177a86f936885b5404ed3458 () {
-  const reflex___state____state__proyecto___proyecto____class_state = useContext(StateContexts.reflex___state____state__proyecto___proyecto____class_state)
-
-
-
-  return (
-    <img src={reflex___state____state__proyecto___proyecto____class_state.img_src_joe}/>
-  )
-}
-
-export function Card_b40fe4c0b1414fb1e9f7e8fc8a59a7c3 () {
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-  const on_click_23f6eb9c8569ab1d694a1002e9b9b750 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.proyecto___proyecto____class_state.toggle_image_bill", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-  return (
-    <RadixThemesCard onClick={on_click_23f6eb9c8569ab1d694a1002e9b9b750}>
-
-<RadixThemesBox css={({ ["textAlign"] : "center" })}>
-
-{"Bill"}
-</RadixThemesBox>
-<Img_4b08cd1110cddf54cf1d07b527a48c54/>
-</RadixThemesCard>
-  )
-}
-
-export function Card_b1848495495e2cb42c11f1b65c8510a3 () {
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-  const on_click_dcb92b09f58477603b732ee04df3ed8e = useCallback(((...args) => (addEvents([(Event("reflex___state____state.proyecto___proyecto____class_state.toggle_image_frans", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-  return (
-    <RadixThemesCard onClick={on_click_dcb92b09f58477603b732ee04df3ed8e}>
-
-<RadixThemesBox css={({ ["textAlign"] : "center" })}>
-
-{"Frans"}
-</RadixThemesBox>
-<Img_70c373d21cbe3e42d23d7b763f1081a7/>
-</RadixThemesCard>
-  )
-}
-
-export function Img_e7a368befe6ff4f9f81154b9ccfa422a () {
-  const reflex___state____state__proyecto___proyecto____class_state = useContext(StateContexts.reflex___state____state__proyecto___proyecto____class_state)
-
-
-
-  return (
-    <img src={reflex___state____state__proyecto___proyecto____class_state.img_src_george}/>
-  )
-}
-
-export function Card_aa212c01ca85705ecb831cb6edf8e15e () {
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-  const on_click_f9255e89bac39baac3adc7ad9f8e4faa = useCallback(((...args) => (addEvents([(Event("reflex___state____state.proyecto___proyecto____class_state.toggle_image_richard", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-  return (
-    <RadixThemesCard onClick={on_click_f9255e89bac39baac3adc7ad9f8e4faa}>
-
-<RadixThemesBox css={({ ["textAlign"] : "center" })}>
-
-{"Richard"}
-</RadixThemesBox>
-<Img_60b1ae80396aec14259ef035f28a75e5/>
-</RadixThemesCard>
-  )
-}
-
-export function Img_79af16985227507e1e2dae843047cb89 () {
-  const reflex___state____state__proyecto___proyecto____class_state = useContext(StateContexts.reflex___state____state__proyecto___proyecto____class_state)
-
-
-
-  return (
-    <img src={reflex___state____state__proyecto___proyecto____class_state.img_src_david}/>
-  )
-}
-
-export function Img_979604ca3b72f753122d3be8f8d9dd20 () {
-  const reflex___state____state__proyecto___proyecto____class_state = useContext(StateContexts.reflex___state____state__proyecto___proyecto____class_state)
-
-
-
-  return (
-    <img src={reflex___state____state__proyecto___proyecto____class_state.img_src_sam}/>
-  )
-}
-
-export function Card_d19851901b80088c0fc2ca7878c82cb8 () {
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-  const on_click_a986259ebbe6efdfacd51ef0ab56c37b = useCallback(((...args) => (addEvents([(Event("reflex___state____state.proyecto___proyecto____class_state.toggle_image_peter", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-  return (
-    <RadixThemesCard onClick={on_click_a986259ebbe6efdfacd51ef0ab56c37b}>
-
-<RadixThemesBox css={({ ["textAlign"] : "center" })}>
-
-{"Peter"}
-</RadixThemesBox>
-<Img_b85c01084dc2033a9556d64ce0c49572/>
-</RadixThemesCard>
-  )
-}
-
-export function Img_70c373d21cbe3e42d23d7b763f1081a7 () {
-  const reflex___state____state__proyecto___proyecto____class_state = useContext(StateContexts.reflex___state____state__proyecto___proyecto____class_state)
-
-
-
-  return (
-    <img src={reflex___state____state__proyecto___proyecto____class_state.img_src_frans}/>
-  )
-}
-
-export function Button_43a2626b6170c04f320c44b0a1daa990 () {
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-  const on_click_c9b7624522561d1f4b8758c83eca20c7 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.proyecto___state____state.answer", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-  return (
-    <RadixThemesButton css={({ ["backgroundColor"] : "var(--accent-10)", ["boxShadow"] : "rgba(0, 0, 0, 0.15) 0px 2px 8px" })} onClick={on_click_c9b7624522561d1f4b8758c83eca20c7}>
-
-{"Ask"}
-</RadixThemesButton>
-  )
-}
-
-export function Card_81a3def8044fb52ab853df2a9d5a2688 () {
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-  const on_click_cd09940076786554ef8b20a54da881bf = useCallback(((...args) => (addEvents([(Event("reflex___state____state.proyecto___proyecto____class_state.toggle_image_susan", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-  return (
-    <RadixThemesCard onClick={on_click_cd09940076786554ef8b20a54da881bf}>
-
-<RadixThemesBox css={({ ["textAlign"] : "center" })}>
-
-{"Susan"}
-</RadixThemesBox>
-<Img_e7d6749187ad9a7f43a51e2242f93b23/>
-</RadixThemesCard>
-  )
-}
-
-export function Card_07f380532b323194f638034b4184a9fb () {
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-  const on_click_a330000f3f3bb8838304ecf15cdf520c = useCallback(((...args) => (addEvents([(Event("reflex___state____state.proyecto___proyecto____class_state.toggle_image_alex", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-  return (
-    <RadixThemesCard onClick={on_click_a330000f3f3bb8838304ecf15cdf520c}>
-
-<RadixThemesBox css={({ ["textAlign"] : "center" })}>
-
-{"Alex"}
-</RadixThemesBox>
-<Img_70b76e2872c4337c204444b9b6714722/>
 </RadixThemesCard>
   )
 }
@@ -270,264 +168,44 @@ export function Card_190704d35910afb999755b37feb3cedf () {
   )
 }
 
-export function Card_12ca881ee40362803217bbe912a5cc03 () {
+export function Div_bd4c022a8f796682aa6392e9d4c102e9 () {
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
-  const on_click_7a358c4015b854eda9e79b7a683bb96f = useCallback(((...args) => (addEvents([(Event("reflex___state____state.proyecto___proyecto____class_state.toggle_image_joe", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
 
 
   return (
-    <RadixThemesCard onClick={on_click_7a358c4015b854eda9e79b7a683bb96f}>
+    <div css={({ ["position"] : "fixed", ["width"] : "100vw", ["height"] : "0" })} title={("Connection Error: "+((connectErrors.length > 0) ? connectErrors[connectErrors.length - 1].message : ''))}>
+
+<Fragment_9017984ada32ffa55f5d2870ebd3c887/>
+</div>
+  )
+}
+
+export function Card_81b107ac07f87cb7f4f31ce13af2e021 () {
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+  const on_click_e62320b043a82877aec0ecb50fa0242b = useCallback(((...args) => (addEvents([(Event("reflex___state____state.proyecto___proyecto____class_state.toggle_image_herman", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+  return (
+    <RadixThemesCard onClick={on_click_e62320b043a82877aec0ecb50fa0242b}>
 
 <RadixThemesBox css={({ ["textAlign"] : "center" })}>
 
-{"Joe"}
+{"Herman"}
 </RadixThemesBox>
-<Img_75226fcd177a86f936885b5404ed3458/>
+<Img_23632658ca6fcb91b16e857461fbaaf6/>
 </RadixThemesCard>
   )
 }
 
-export function Card_71c26b6f3071385d0547b90737854d9a () {
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-  const on_click_80290ad78694950fcbef211687bc1414 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.proyecto___proyecto____class_state.toggle_image_paul", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-  return (
-    <RadixThemesCard onClick={on_click_80290ad78694950fcbef211687bc1414}>
-
-<RadixThemesBox css={({ ["textAlign"] : "center" })}>
-
-{"Paul"}
-</RadixThemesBox>
-<Img_e8a138bb5966477fefef25b7e1374991/>
-</RadixThemesCard>
-  )
-}
-
-export function Iconbutton_5d4a20c282d066f2f46dc5923d99db7b () {
-  const { toggleColorMode } = useContext(ColorModeContext)
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-  const on_click_9922dd3e837b9e087c86a2522c2c93f8 = useCallback(toggleColorMode, [addEvents, Event, toggleColorMode])
-
-
-  return (
-    <RadixThemesIconButton css={({ ["padding"] : "6px", ["position"] : "fixed", ["top"] : "2rem", ["right"] : "2rem", ["background"] : "transparent", ["color"] : "inherit", ["zIndex"] : "20", ["&:hover"] : ({ ["cursor"] : "pointer" }) })} onClick={on_click_9922dd3e837b9e087c86a2522c2c93f8}>
-
-<Fragment_ce8bcea548e7072af157110c53ab895c/>
-</RadixThemesIconButton>
-  )
-}
-
-export function Card_9bd4454a5413364f66fd8ae22eaae037 () {
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-  const on_click_3236206a60b882a8b5acd75e39935dc7 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.proyecto___proyecto____class_state.toggle_image_sam", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-  return (
-    <RadixThemesCard onClick={on_click_3236206a60b882a8b5acd75e39935dc7}>
-
-<RadixThemesBox css={({ ["textAlign"] : "center" })}>
-
-{"Sam"}
-</RadixThemesBox>
-<Img_979604ca3b72f753122d3be8f8d9dd20/>
-</RadixThemesCard>
-  )
-}
-
-export function Img_70b76e2872c4337c204444b9b6714722 () {
+export function Img_79af16985227507e1e2dae843047cb89 () {
   const reflex___state____state__proyecto___proyecto____class_state = useContext(StateContexts.reflex___state____state__proyecto___proyecto____class_state)
 
 
 
   return (
-    <img src={reflex___state____state__proyecto___proyecto____class_state.img_src_alex}/>
-  )
-}
-
-export function Img_bbdedb9ee352b8f3a9f2b37356898c4b () {
-  const reflex___state____state__proyecto___state____state = useContext(StateContexts.reflex___state____state__proyecto___state____state)
-
-
-
-  return (
-    <img src={(reflex___state____state__proyecto___state____state.personaje_maquina+".png")}/>
-  )
-}
-
-export function Fragment_9017984ada32ffa55f5d2870ebd3c887 () {
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-
-  return (
-    <Fragment>
-
-{isTrue((connectErrors.length > 0)) ? (
-  <Fragment>
-
-<LucideWifiOffIcon css={({ ["color"] : "crimson", ["zIndex"] : 9999, ["position"] : "fixed", ["bottom"] : "33px", ["right"] : "33px", ["animation"] : (pulse+" 1s infinite") })} size={32}/>
-</Fragment>
-) : (
-  <Fragment/>
-)}
-</Fragment>
-  )
-}
-
-export function Img_43b8798ad4cd02642e425af32bc1f27b () {
-  const reflex___state____state__proyecto___proyecto____class_state = useContext(StateContexts.reflex___state____state__proyecto___proyecto____class_state)
-
-
-
-  return (
-    <img src={reflex___state____state__proyecto___proyecto____class_state.img_src_max}/>
-  )
-}
-
-export function Card_0242d99d282cd68e074cb3c8bcd6ead8 () {
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-  const on_click_1bd24ceb0d64258ba656f9c52d16b1bf = useCallback(((...args) => (addEvents([(Event("reflex___state____state.proyecto___proyecto____class_state.toggle_image_alfred", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-  return (
-    <RadixThemesCard onClick={on_click_1bd24ceb0d64258ba656f9c52d16b1bf}>
-
-<RadixThemesBox css={({ ["textAlign"] : "center" })}>
-
-{"Alfred"}
-</RadixThemesBox>
-<Img_08efbf82397233d74561ee1421e9f3a2/>
-</RadixThemesCard>
-  )
-}
-
-export function Card_9599eedd2fcf312f28e1ba1153369215 () {
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-  const on_click_6947b007196e00116fe92d4b08e88bb2 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.proyecto___proyecto____class_state.toggle_image_anita", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-  return (
-    <RadixThemesCard onClick={on_click_6947b007196e00116fe92d4b08e88bb2}>
-
-<RadixThemesBox css={({ ["textAlign"] : "center" })}>
-
-{"Anita"}
-</RadixThemesBox>
-<Img_93f3c3b6017dd065c3f95a6d38dfae6f/>
-</RadixThemesCard>
-  )
-}
-
-export function Img_1ab668c6c84805b606515606c7d9373f () {
-  const reflex___state____state__proyecto___proyecto____class_state = useContext(StateContexts.reflex___state____state__proyecto___proyecto____class_state)
-
-
-
-  return (
-    <img src={reflex___state____state__proyecto___proyecto____class_state.img_src_tom}/>
-  )
-}
-
-export function Textfield__root_d1efa397f7b032415f5eb30b52b01dbc () {
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-  const on_change_f9a57ed6f06faa64a9e911ac330971db = useCallback(((_e) => (addEvents([(Event("reflex___state____state.proyecto___state____state.set_question", ({ ["value"] : _e["target"]["value"] }), ({  })))], [_e], ({  })))), [addEvents, Event])
-
-
-  return (
-    <RadixThemesTextField.Root css={({ ["borderWidth"] : "1px", ["padding"] : "0.5em", ["boxShadow"] : "rgba(0, 0, 0, 0.15) 0px 2px 8px", ["width"] : "350px" })} onChange={on_change_f9a57ed6f06faa64a9e911ac330971db} placeholder={"Ask a question"}/>
-  )
-}
-
-export function Img_541ae463bf3d8759ab1e56ac478be741 () {
-  const reflex___state____state__proyecto___proyecto____class_state = useContext(StateContexts.reflex___state____state__proyecto___proyecto____class_state)
-
-
-
-  return (
-    <img src={reflex___state____state__proyecto___proyecto____class_state.img_src_maria}/>
-  )
-}
-
-export function Img_985a4f59369b28bb4fb8cffdf1e3a00c () {
-  const reflex___state____state__proyecto___proyecto____class_state = useContext(StateContexts.reflex___state____state__proyecto___proyecto____class_state)
-
-
-
-  return (
-    <img src={reflex___state____state__proyecto___proyecto____class_state.img_src_claire}/>
-  )
-}
-
-export function Card_7840a12b6e23ce46a7edfbd5387cbac6 () {
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-  const on_click_aa0d2d3a56f690e3eeb9523ddce010b4 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.proyecto___proyecto____class_state.toggle_image_claire", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-  return (
-    <RadixThemesCard onClick={on_click_aa0d2d3a56f690e3eeb9523ddce010b4}>
-
-<RadixThemesBox css={({ ["textAlign"] : "center" })}>
-
-{"Claire"}
-</RadixThemesBox>
-<Img_985a4f59369b28bb4fb8cffdf1e3a00c/>
-</RadixThemesCard>
-  )
-}
-
-export function Card_237950acab51ceb33298087f670dc34d () {
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-  const on_click_ef1bcbbd3c849e7e0fa80b8cce0bdab8 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.proyecto___proyecto____class_state.toggle_image_philip", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-  return (
-    <RadixThemesCard onClick={on_click_ef1bcbbd3c849e7e0fa80b8cce0bdab8}>
-
-<RadixThemesBox css={({ ["textAlign"] : "center" })}>
-
-{"Philip"}
-</RadixThemesBox>
-<Img_1e643d66e8204e8483e944a736692aca/>
-</RadixThemesCard>
-  )
-}
-
-export function Toaster_6e6ebf8d7ce589d59b7d382fb7576edf () {
-  const { resolvedColorMode } = useContext(ColorModeContext)
-
-
-  refs['__toast'] = toast
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-  const toast_props = ({ ["description"] : ("Check if server is reachable at "+getBackendURL(env.EVENT).href), ["closeButton"] : true, ["duration"] : 120000, ["id"] : "websocket-error" });
-  const [userDismissed, setUserDismissed] = useState(false);
-  (useEffect(
-() => {
-    if ((connectErrors.length >= 2)) {
-        if (!userDismissed) {
-            toast.error(
-                `Cannot connect to server: ${((connectErrors.length > 0) ? connectErrors[connectErrors.length - 1].message : '')}.`,
-                {...toast_props, onDismiss: () => setUserDismissed(true)},
-            )
-        }
-    } else {
-        toast.dismiss("websocket-error");
-        setUserDismissed(false);  // after reconnection reset dismissed state
-    }
-}
-, [connectErrors]))
-
-  return (
-    <Toaster closeButton={false} expand={true} position={"bottom-right"} richColors={true} theme={resolvedColorMode}/>
+    <img src={reflex___state____state__proyecto___proyecto____class_state.img_src_david}/>
   )
 }
 
@@ -545,24 +223,6 @@ export function Card_e025271ad33904c30ab094609cc9dd50 () {
 {"Charles"}
 </RadixThemesBox>
 <Img_bc96033e17928814fe15a4df251a442d/>
-</RadixThemesCard>
-  )
-}
-
-export function Card_7097410a58e3f5c9cf1c3dbac9e09a56 () {
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-  const on_click_8244045d773ccb0d1294794c60c07942 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.proyecto___proyecto____class_state.toggle_image_david", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-  return (
-    <RadixThemesCard onClick={on_click_8244045d773ccb0d1294794c60c07942}>
-
-<RadixThemesBox css={({ ["textAlign"] : "center" })}>
-
-{"David"}
-</RadixThemesBox>
-<Img_79af16985227507e1e2dae843047cb89/>
 </RadixThemesCard>
   )
 }
@@ -585,102 +245,88 @@ export function Card_1c4f6b70bf00a5b01c7df925e26267ee () {
   )
 }
 
-export function Img_bc96033e17928814fe15a4df251a442d () {
-  const reflex___state____state__proyecto___proyecto____class_state = useContext(StateContexts.reflex___state____state__proyecto___proyecto____class_state)
-
-
-
-  return (
-    <img src={reflex___state____state__proyecto___proyecto____class_state.img_src_charles}/>
-  )
-}
-
-export function Img_9a2956f6581eb4cfcf296da22eb48c73 () {
-  const reflex___state____state__proyecto___proyecto____class_state = useContext(StateContexts.reflex___state____state__proyecto___proyecto____class_state)
-
-
-
-  return (
-    <img src={reflex___state____state__proyecto___proyecto____class_state.img_src_eric}/>
-  )
-}
-
-export function Img_23632658ca6fcb91b16e857461fbaaf6 () {
-  const reflex___state____state__proyecto___proyecto____class_state = useContext(StateContexts.reflex___state____state__proyecto___proyecto____class_state)
-
-
-
-  return (
-    <img src={reflex___state____state__proyecto___proyecto____class_state.img_src_herman}/>
-  )
-}
-
-export function Card_c29d8440051f12639ae0eecd366ebdd3 () {
+export function Textfield__root_32c39a51f89f6b0aef9ee53a421065f0 () {
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
-  const on_click_606fd04987907daa5117ec1d4aaa5441 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.proyecto___proyecto____class_state.toggle_image_robert", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
+  const on_change_f9a57ed6f06faa64a9e911ac330971db = useCallback(((_e) => (addEvents([(Event("reflex___state____state.proyecto___state____state.set_question", ({ ["value"] : _e["target"]["value"] }), ({  })))], [_e], ({  })))), [addEvents, Event])
 
 
   return (
-    <RadixThemesCard onClick={on_click_606fd04987907daa5117ec1d4aaa5441}>
+    <RadixThemesTextField.Root css={({ ["borderWidth"] : "1px", ["padding"] : "0.5em", ["boxShadow"] : "rgba(0, 0, 0, 0.15) 0px 2px 8px", ["width"] : "350px" })} onChange={on_change_f9a57ed6f06faa64a9e911ac330971db} placeholder={"Hacer pregunta"}/>
+  )
+}
+
+export function Img_e8a138bb5966477fefef25b7e1374991 () {
+  const reflex___state____state__proyecto___proyecto____class_state = useContext(StateContexts.reflex___state____state__proyecto___proyecto____class_state)
+
+
+
+  return (
+    <img src={reflex___state____state__proyecto___proyecto____class_state.img_src_paul}/>
+  )
+}
+
+export function Img_541ae463bf3d8759ab1e56ac478be741 () {
+  const reflex___state____state__proyecto___proyecto____class_state = useContext(StateContexts.reflex___state____state__proyecto___proyecto____class_state)
+
+
+
+  return (
+    <img src={reflex___state____state__proyecto___proyecto____class_state.img_src_maria}/>
+  )
+}
+
+export function Card_aa212c01ca85705ecb831cb6edf8e15e () {
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+  const on_click_f9255e89bac39baac3adc7ad9f8e4faa = useCallback(((...args) => (addEvents([(Event("reflex___state____state.proyecto___proyecto____class_state.toggle_image_richard", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+  return (
+    <RadixThemesCard onClick={on_click_f9255e89bac39baac3adc7ad9f8e4faa}>
 
 <RadixThemesBox css={({ ["textAlign"] : "center" })}>
 
-{"Robert"}
+{"Richard"}
 </RadixThemesBox>
-<Img_73d717efbbecfecebc44403a1a0fd6b0/>
+<Img_60b1ae80396aec14259ef035f28a75e5/>
 </RadixThemesCard>
   )
 }
 
-export function Fragment_ce8bcea548e7072af157110c53ab895c () {
-  const { resolvedColorMode } = useContext(ColorModeContext)
-
-
-
-  return (
-    <Fragment>
-
-{isTrue((resolvedColorMode === "light")) ? (
-  <Fragment>
-
-<LucideSunIcon css={({ ["color"] : "var(--current-color)" })}/>
-</Fragment>
-) : (
-  <Fragment>
-
-<LucideMoonIcon css={({ ["color"] : "var(--current-color)" })}/>
-</Fragment>
-)}
-</Fragment>
-  )
-}
-
-export function Card_81b107ac07f87cb7f4f31ce13af2e021 () {
+export function Card_7840a12b6e23ce46a7edfbd5387cbac6 () {
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
-  const on_click_e62320b043a82877aec0ecb50fa0242b = useCallback(((...args) => (addEvents([(Event("reflex___state____state.proyecto___proyecto____class_state.toggle_image_herman", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
+  const on_click_aa0d2d3a56f690e3eeb9523ddce010b4 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.proyecto___proyecto____class_state.toggle_image_claire", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
 
 
   return (
-    <RadixThemesCard onClick={on_click_e62320b043a82877aec0ecb50fa0242b}>
+    <RadixThemesCard onClick={on_click_aa0d2d3a56f690e3eeb9523ddce010b4}>
 
 <RadixThemesBox css={({ ["textAlign"] : "center" })}>
 
-{"Herman"}
+{"Claire"}
 </RadixThemesBox>
-<Img_23632658ca6fcb91b16e857461fbaaf6/>
+<Img_985a4f59369b28bb4fb8cffdf1e3a00c/>
 </RadixThemesCard>
   )
 }
 
-export function Img_73d717efbbecfecebc44403a1a0fd6b0 () {
-  const reflex___state____state__proyecto___proyecto____class_state = useContext(StateContexts.reflex___state____state__proyecto___proyecto____class_state)
+export function Card_d19851901b80088c0fc2ca7878c82cb8 () {
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
 
+  const on_click_a986259ebbe6efdfacd51ef0ab56c37b = useCallback(((...args) => (addEvents([(Event("reflex___state____state.proyecto___proyecto____class_state.toggle_image_peter", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
 
 
   return (
-    <img src={reflex___state____state__proyecto___proyecto____class_state.img_src_robert}/>
+    <RadixThemesCard onClick={on_click_a986259ebbe6efdfacd51ef0ab56c37b}>
+
+<RadixThemesBox css={({ ["textAlign"] : "center" })}>
+
+{"Peter"}
+</RadixThemesBox>
+<Img_b85c01084dc2033a9556d64ce0c49572/>
+</RadixThemesCard>
   )
 }
 
@@ -702,116 +348,17 @@ export function Card_7e81027aba439541258173c9594151f7 () {
   )
 }
 
-export function Div_bd4c022a8f796682aa6392e9d4c102e9 () {
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-
-
-  return (
-    <div css={({ ["position"] : "fixed", ["width"] : "100vw", ["height"] : "0" })} title={("Connection Error: "+((connectErrors.length > 0) ? connectErrors[connectErrors.length - 1].message : ''))}>
-
-<Fragment_9017984ada32ffa55f5d2870ebd3c887/>
-</div>
-  )
-}
-
-export function Img_e8a138bb5966477fefef25b7e1374991 () {
+export function Img_70c373d21cbe3e42d23d7b763f1081a7 () {
   const reflex___state____state__proyecto___proyecto____class_state = useContext(StateContexts.reflex___state____state__proyecto___proyecto____class_state)
 
 
 
   return (
-    <img src={reflex___state____state__proyecto___proyecto____class_state.img_src_paul}/>
+    <img src={reflex___state____state__proyecto___proyecto____class_state.img_src_frans}/>
   )
 }
 
-export function Img_93f3c3b6017dd065c3f95a6d38dfae6f () {
-  const reflex___state____state__proyecto___proyecto____class_state = useContext(StateContexts.reflex___state____state__proyecto___proyecto____class_state)
-
-
-
-  return (
-    <img src={reflex___state____state__proyecto___proyecto____class_state.img_src_anita}/>
-  )
-}
-
-export function Img_1ad9c892418bf6678574eed9d18a6689 () {
-  const reflex___state____state__proyecto___proyecto____class_state = useContext(StateContexts.reflex___state____state__proyecto___proyecto____class_state)
-
-
-
-  return (
-    <img src={reflex___state____state__proyecto___proyecto____class_state.img_src_bernard}/>
-  )
-}
-
-export function Img_e7d6749187ad9a7f43a51e2242f93b23 () {
-  const reflex___state____state__proyecto___proyecto____class_state = useContext(StateContexts.reflex___state____state__proyecto___proyecto____class_state)
-
-
-
-  return (
-    <img src={reflex___state____state__proyecto___proyecto____class_state.img_src_susan}/>
-  )
-}
-
-export function Img_4b08cd1110cddf54cf1d07b527a48c54 () {
-  const reflex___state____state__proyecto___proyecto____class_state = useContext(StateContexts.reflex___state____state__proyecto___proyecto____class_state)
-
-
-
-  return (
-    <img src={reflex___state____state__proyecto___proyecto____class_state.img_src_bill}/>
-  )
-}
-
-export function Card_770bbc913d7a08e242fd9041ec5e2908 () {
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-  const on_click_6d1475f18d789b38ea7aeb92f1fb0aab = useCallback(((...args) => (addEvents([(Event("reflex___state____state.proyecto___proyecto____class_state.toggle_image_eric", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-  return (
-    <RadixThemesCard onClick={on_click_6d1475f18d789b38ea7aeb92f1fb0aab}>
-
-<RadixThemesBox css={({ ["textAlign"] : "center" })}>
-
-{"Eric"}
-</RadixThemesBox>
-<Img_9a2956f6581eb4cfcf296da22eb48c73/>
-</RadixThemesCard>
-  )
-}
-
-export function Card_06a31486c9ba80720a65aaabee1af6ba () {
-  const [addEvents, connectErrors] = useContext(EventLoopContext);
-
-  const on_click_9de48c9ae078dda9b09f3cece8eea22a = useCallback(((...args) => (addEvents([(Event("reflex___state____state.proyecto___proyecto____class_state.toggle_image_tom", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
-
-
-  return (
-    <RadixThemesCard onClick={on_click_9de48c9ae078dda9b09f3cece8eea22a}>
-
-<RadixThemesBox css={({ ["textAlign"] : "center" })}>
-
-{"Tom"}
-</RadixThemesBox>
-<Img_1ab668c6c84805b606515606c7d9373f/>
-</RadixThemesCard>
-  )
-}
-
-export function Img_0d2569e6b8951a649ad70f4ed0aa156a () {
-  const reflex___state____state__proyecto___proyecto____class_state = useContext(StateContexts.reflex___state____state__proyecto___proyecto____class_state)
-
-
-
-  return (
-    <img src={reflex___state____state__proyecto___proyecto____class_state.img_src_anne}/>
-  )
-}
-
-export function Errorboundary_46b486f970bbf4431643b9aa32280c64 () {
+export function Errorboundary_02a6bc9bb6feb1c177eed798ac32bd91 () {
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
   const on_error_0f5dbf674521530422d73a7946faf6d4 = useCallback(((_error, _info) => (addEvents([(Event("reflex___state____state.reflex___state____frontend_event_exception_state.handle_frontend_exception", ({ ["stack"] : _error["stack"], ["component_stack"] : _info["componentStack"] }), ({  })))], [_error, _info], ({  })))), [addEvents, Event])
@@ -881,12 +428,35 @@ export function Errorboundary_46b486f970bbf4431643b9aa32280c64 () {
 </RadixThemesFlex>
 </RadixThemesPopover.Content>
 </RadixThemesPopover.Root>
-<Box_c2b8c4fd4667ad61d6fa6dc03075c730/>
+<Box_4a0c73823d9fe74319a4c4fe2fa98d1b/>
 <RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"row"} gap={"3"}>
 
-<Textfield__root_d1efa397f7b032415f5eb30b52b01dbc/>
-<Button_43a2626b6170c04f320c44b0a1daa990/>
+<Textfield__root_32c39a51f89f6b0aef9ee53a421065f0/>
+<Button_420e1e7132813f08c79ecb924ff3d676/>
 </RadixThemesFlex>
+<Fragment>
+
+<RadixThemesPopover.Root>
+
+<RadixThemesPopover.Trigger>
+
+<RadixThemesButton color={"red"}>
+
+{"Volver a jugar"}
+</RadixThemesButton>
+</RadixThemesPopover.Trigger>
+<RadixThemesPopover.Content css={({ ["direction"] : "column", ["spacing"] : "3" })}>
+
+<RadixThemesFlex>
+
+<RadixThemesText as={"p"}>
+
+{"Proximamente"}
+</RadixThemesText>
+</RadixThemesFlex>
+</RadixThemesPopover.Content>
+</RadixThemesPopover.Root>
+</Fragment>
 </RadixThemesFlex>
 </RadixThemesContainer>
 <NextHead>
@@ -901,7 +471,290 @@ export function Errorboundary_46b486f970bbf4431643b9aa32280c64 () {
   )
 }
 
-export function Box_c2b8c4fd4667ad61d6fa6dc03075c730 () {
+export function Card_9bd4454a5413364f66fd8ae22eaae037 () {
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+  const on_click_3236206a60b882a8b5acd75e39935dc7 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.proyecto___proyecto____class_state.toggle_image_sam", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+  return (
+    <RadixThemesCard onClick={on_click_3236206a60b882a8b5acd75e39935dc7}>
+
+<RadixThemesBox css={({ ["textAlign"] : "center" })}>
+
+{"Sam"}
+</RadixThemesBox>
+<Img_979604ca3b72f753122d3be8f8d9dd20/>
+</RadixThemesCard>
+  )
+}
+
+export function Card_b40fe4c0b1414fb1e9f7e8fc8a59a7c3 () {
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+  const on_click_23f6eb9c8569ab1d694a1002e9b9b750 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.proyecto___proyecto____class_state.toggle_image_bill", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+  return (
+    <RadixThemesCard onClick={on_click_23f6eb9c8569ab1d694a1002e9b9b750}>
+
+<RadixThemesBox css={({ ["textAlign"] : "center" })}>
+
+{"Bill"}
+</RadixThemesBox>
+<Img_4b08cd1110cddf54cf1d07b527a48c54/>
+</RadixThemesCard>
+  )
+}
+
+export function Img_979604ca3b72f753122d3be8f8d9dd20 () {
+  const reflex___state____state__proyecto___proyecto____class_state = useContext(StateContexts.reflex___state____state__proyecto___proyecto____class_state)
+
+
+
+  return (
+    <img src={reflex___state____state__proyecto___proyecto____class_state.img_src_sam}/>
+  )
+}
+
+export function Img_75226fcd177a86f936885b5404ed3458 () {
+  const reflex___state____state__proyecto___proyecto____class_state = useContext(StateContexts.reflex___state____state__proyecto___proyecto____class_state)
+
+
+
+  return (
+    <img src={reflex___state____state__proyecto___proyecto____class_state.img_src_joe}/>
+  )
+}
+
+export function Card_b1848495495e2cb42c11f1b65c8510a3 () {
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+  const on_click_dcb92b09f58477603b732ee04df3ed8e = useCallback(((...args) => (addEvents([(Event("reflex___state____state.proyecto___proyecto____class_state.toggle_image_frans", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+  return (
+    <RadixThemesCard onClick={on_click_dcb92b09f58477603b732ee04df3ed8e}>
+
+<RadixThemesBox css={({ ["textAlign"] : "center" })}>
+
+{"Frans"}
+</RadixThemesBox>
+<Img_70c373d21cbe3e42d23d7b763f1081a7/>
+</RadixThemesCard>
+  )
+}
+
+export function Img_985a4f59369b28bb4fb8cffdf1e3a00c () {
+  const reflex___state____state__proyecto___proyecto____class_state = useContext(StateContexts.reflex___state____state__proyecto___proyecto____class_state)
+
+
+
+  return (
+    <img src={reflex___state____state__proyecto___proyecto____class_state.img_src_claire}/>
+  )
+}
+
+export function Card_7097410a58e3f5c9cf1c3dbac9e09a56 () {
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+  const on_click_8244045d773ccb0d1294794c60c07942 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.proyecto___proyecto____class_state.toggle_image_david", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+  return (
+    <RadixThemesCard onClick={on_click_8244045d773ccb0d1294794c60c07942}>
+
+<RadixThemesBox css={({ ["textAlign"] : "center" })}>
+
+{"David"}
+</RadixThemesBox>
+<Img_79af16985227507e1e2dae843047cb89/>
+</RadixThemesCard>
+  )
+}
+
+export function Card_7acb00886815bc0142b32ba7bc9cee63 () {
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+  const on_click_9d0ee9b58aacc7fb06cd6a9629d61dda = useCallback(((...args) => (addEvents([(Event("reflex___state____state.proyecto___proyecto____class_state.toggle_image_max", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+  return (
+    <RadixThemesCard onClick={on_click_9d0ee9b58aacc7fb06cd6a9629d61dda}>
+
+<RadixThemesBox css={({ ["textAlign"] : "center" })}>
+
+{"Max"}
+</RadixThemesBox>
+<Img_43b8798ad4cd02642e425af32bc1f27b/>
+</RadixThemesCard>
+  )
+}
+
+export function Card_12ca881ee40362803217bbe912a5cc03 () {
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+  const on_click_7a358c4015b854eda9e79b7a683bb96f = useCallback(((...args) => (addEvents([(Event("reflex___state____state.proyecto___proyecto____class_state.toggle_image_joe", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+  return (
+    <RadixThemesCard onClick={on_click_7a358c4015b854eda9e79b7a683bb96f}>
+
+<RadixThemesBox css={({ ["textAlign"] : "center" })}>
+
+{"Joe"}
+</RadixThemesBox>
+<Img_75226fcd177a86f936885b5404ed3458/>
+</RadixThemesCard>
+  )
+}
+
+export function Img_70b76e2872c4337c204444b9b6714722 () {
+  const reflex___state____state__proyecto___proyecto____class_state = useContext(StateContexts.reflex___state____state__proyecto___proyecto____class_state)
+
+
+
+  return (
+    <img src={reflex___state____state__proyecto___proyecto____class_state.img_src_alex}/>
+  )
+}
+
+export function Iconbutton_5d4a20c282d066f2f46dc5923d99db7b () {
+  const { toggleColorMode } = useContext(ColorModeContext)
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+  const on_click_9922dd3e837b9e087c86a2522c2c93f8 = useCallback(toggleColorMode, [addEvents, Event, toggleColorMode])
+
+
+  return (
+    <RadixThemesIconButton css={({ ["padding"] : "6px", ["position"] : "fixed", ["top"] : "2rem", ["right"] : "2rem", ["background"] : "transparent", ["color"] : "inherit", ["zIndex"] : "20", ["&:hover"] : ({ ["cursor"] : "pointer" }) })} onClick={on_click_9922dd3e837b9e087c86a2522c2c93f8}>
+
+<Fragment_ce8bcea548e7072af157110c53ab895c/>
+</RadixThemesIconButton>
+  )
+}
+
+export function Card_c29d8440051f12639ae0eecd366ebdd3 () {
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+  const on_click_606fd04987907daa5117ec1d4aaa5441 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.proyecto___proyecto____class_state.toggle_image_robert", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+  return (
+    <RadixThemesCard onClick={on_click_606fd04987907daa5117ec1d4aaa5441}>
+
+<RadixThemesBox css={({ ["textAlign"] : "center" })}>
+
+{"Robert"}
+</RadixThemesBox>
+<Img_73d717efbbecfecebc44403a1a0fd6b0/>
+</RadixThemesCard>
+  )
+}
+
+export function Img_b85c01084dc2033a9556d64ce0c49572 () {
+  const reflex___state____state__proyecto___proyecto____class_state = useContext(StateContexts.reflex___state____state__proyecto___proyecto____class_state)
+
+
+
+  return (
+    <img src={reflex___state____state__proyecto___proyecto____class_state.img_src_peter}/>
+  )
+}
+
+export function Card_81a3def8044fb52ab853df2a9d5a2688 () {
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+  const on_click_cd09940076786554ef8b20a54da881bf = useCallback(((...args) => (addEvents([(Event("reflex___state____state.proyecto___proyecto____class_state.toggle_image_susan", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+  return (
+    <RadixThemesCard onClick={on_click_cd09940076786554ef8b20a54da881bf}>
+
+<RadixThemesBox css={({ ["textAlign"] : "center" })}>
+
+{"Susan"}
+</RadixThemesBox>
+<Img_e7d6749187ad9a7f43a51e2242f93b23/>
+</RadixThemesCard>
+  )
+}
+
+export function Card_07f380532b323194f638034b4184a9fb () {
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+  const on_click_a330000f3f3bb8838304ecf15cdf520c = useCallback(((...args) => (addEvents([(Event("reflex___state____state.proyecto___proyecto____class_state.toggle_image_alex", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+  return (
+    <RadixThemesCard onClick={on_click_a330000f3f3bb8838304ecf15cdf520c}>
+
+<RadixThemesBox css={({ ["textAlign"] : "center" })}>
+
+{"Alex"}
+</RadixThemesBox>
+<Img_70b76e2872c4337c204444b9b6714722/>
+</RadixThemesCard>
+  )
+}
+
+const pulse = keyframes`
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+`
+
+
+export function Card_71c26b6f3071385d0547b90737854d9a () {
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+  const on_click_80290ad78694950fcbef211687bc1414 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.proyecto___proyecto____class_state.toggle_image_paul", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+  return (
+    <RadixThemesCard onClick={on_click_80290ad78694950fcbef211687bc1414}>
+
+<RadixThemesBox css={({ ["textAlign"] : "center" })}>
+
+{"Paul"}
+</RadixThemesBox>
+<Img_e8a138bb5966477fefef25b7e1374991/>
+</RadixThemesCard>
+  )
+}
+
+export function Card_06a31486c9ba80720a65aaabee1af6ba () {
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+  const on_click_9de48c9ae078dda9b09f3cece8eea22a = useCallback(((...args) => (addEvents([(Event("reflex___state____state.proyecto___proyecto____class_state.toggle_image_tom", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+  return (
+    <RadixThemesCard onClick={on_click_9de48c9ae078dda9b09f3cece8eea22a}>
+
+<RadixThemesBox css={({ ["textAlign"] : "center" })}>
+
+{"Tom"}
+</RadixThemesBox>
+<Img_1ab668c6c84805b606515606c7d9373f/>
+</RadixThemesCard>
+  )
+}
+
+export function Img_0d2569e6b8951a649ad70f4ed0aa156a () {
+  const reflex___state____state__proyecto___proyecto____class_state = useContext(StateContexts.reflex___state____state__proyecto___proyecto____class_state)
+
+
+
+  return (
+    <img src={reflex___state____state__proyecto___proyecto____class_state.img_src_anne}/>
+  )
+}
+
+export function Box_4a0c73823d9fe74319a4c4fe2fa98d1b () {
   const reflex___state____state__proyecto___state____state = useContext(StateContexts.reflex___state____state__proyecto___state____state)
 
 
@@ -909,8 +762,8 @@ export function Box_c2b8c4fd4667ad61d6fa6dc03075c730 () {
   return (
     <RadixThemesBox>
 
-<>{reflex___state____state__proyecto___state____state.chat_history.map((messages, index_b099966688182856) => (
-  <RadixThemesBox css={({ ["marginTop"] : "1em", ["marginBottom"] : "1em" })} key={index_b099966688182856}>
+<>{reflex___state____state__proyecto___state____state.chat_history.map((messages, index_bb03d4752dd5d66d) => (
+  <RadixThemesBox css={({ ["marginTop"] : "1em", ["marginBottom"] : "1em" })} key={index_bb03d4752dd5d66d}>
 
 <RadixThemesBox css={({ ["textAlign"] : "right" })}>
 
@@ -926,29 +779,199 @@ export function Box_c2b8c4fd4667ad61d6fa6dc03075c730 () {
   )
 }
 
-export function Img_08efbf82397233d74561ee1421e9f3a2 () {
+export function Img_9a2956f6581eb4cfcf296da22eb48c73 () {
   const reflex___state____state__proyecto___proyecto____class_state = useContext(StateContexts.reflex___state____state__proyecto___proyecto____class_state)
 
 
 
   return (
-    <img src={reflex___state____state__proyecto___proyecto____class_state.img_src_alfred}/>
+    <img src={reflex___state____state__proyecto___proyecto____class_state.img_src_eric}/>
   )
 }
 
-const pulse = keyframes`
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-`
+export function Button_420e1e7132813f08c79ecb924ff3d676 () {
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
 
+  const on_click_c9b7624522561d1f4b8758c83eca20c7 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.proyecto___state____state.answer", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+  return (
+    <RadixThemesButton css={({ ["backgroundColor"] : "var(--accent-10)", ["boxShadow"] : "rgba(0, 0, 0, 0.15) 0px 2px 8px" })} onClick={on_click_c9b7624522561d1f4b8758c83eca20c7}>
+
+{"Preguntar"}
+</RadixThemesButton>
+  )
+}
+
+export function Toaster_6e6ebf8d7ce589d59b7d382fb7576edf () {
+  const { resolvedColorMode } = useContext(ColorModeContext)
+
+
+  refs['__toast'] = toast
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+  const toast_props = ({ ["description"] : ("Check if server is reachable at "+getBackendURL(env.EVENT).href), ["closeButton"] : true, ["duration"] : 120000, ["id"] : "websocket-error" });
+  const [userDismissed, setUserDismissed] = useState(false);
+  (useEffect(
+() => {
+    if ((connectErrors.length >= 2)) {
+        if (!userDismissed) {
+            toast.error(
+                `Cannot connect to server: ${((connectErrors.length > 0) ? connectErrors[connectErrors.length - 1].message : '')}.`,
+                {...toast_props, onDismiss: () => setUserDismissed(true)},
+            )
+        }
+    } else {
+        toast.dismiss("websocket-error");
+        setUserDismissed(false);  // after reconnection reset dismissed state
+    }
+}
+, [connectErrors]))
+
+  return (
+    <Toaster closeButton={false} expand={true} position={"bottom-right"} richColors={true} theme={resolvedColorMode}/>
+  )
+}
+
+export function Img_43b8798ad4cd02642e425af32bc1f27b () {
+  const reflex___state____state__proyecto___proyecto____class_state = useContext(StateContexts.reflex___state____state__proyecto___proyecto____class_state)
+
+
+
+  return (
+    <img src={reflex___state____state__proyecto___proyecto____class_state.img_src_max}/>
+  )
+}
+
+export function Card_237950acab51ceb33298087f670dc34d () {
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+  const on_click_ef1bcbbd3c849e7e0fa80b8cce0bdab8 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.proyecto___proyecto____class_state.toggle_image_philip", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+  return (
+    <RadixThemesCard onClick={on_click_ef1bcbbd3c849e7e0fa80b8cce0bdab8}>
+
+<RadixThemesBox css={({ ["textAlign"] : "center" })}>
+
+{"Philip"}
+</RadixThemesBox>
+<Img_1e643d66e8204e8483e944a736692aca/>
+</RadixThemesCard>
+  )
+}
+
+export function Img_1e643d66e8204e8483e944a736692aca () {
+  const reflex___state____state__proyecto___proyecto____class_state = useContext(StateContexts.reflex___state____state__proyecto___proyecto____class_state)
+
+
+
+  return (
+    <img src={reflex___state____state__proyecto___proyecto____class_state.img_src_philip}/>
+  )
+}
+
+export function Img_93f3c3b6017dd065c3f95a6d38dfae6f () {
+  const reflex___state____state__proyecto___proyecto____class_state = useContext(StateContexts.reflex___state____state__proyecto___proyecto____class_state)
+
+
+
+  return (
+    <img src={reflex___state____state__proyecto___proyecto____class_state.img_src_anita}/>
+  )
+}
+
+export function Card_0242d99d282cd68e074cb3c8bcd6ead8 () {
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+  const on_click_1bd24ceb0d64258ba656f9c52d16b1bf = useCallback(((...args) => (addEvents([(Event("reflex___state____state.proyecto___proyecto____class_state.toggle_image_alfred", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+  return (
+    <RadixThemesCard onClick={on_click_1bd24ceb0d64258ba656f9c52d16b1bf}>
+
+<RadixThemesBox css={({ ["textAlign"] : "center" })}>
+
+{"Alfred"}
+</RadixThemesBox>
+<Img_08efbf82397233d74561ee1421e9f3a2/>
+</RadixThemesCard>
+  )
+}
+
+export function Img_1ad9c892418bf6678574eed9d18a6689 () {
+  const reflex___state____state__proyecto___proyecto____class_state = useContext(StateContexts.reflex___state____state__proyecto___proyecto____class_state)
+
+
+
+  return (
+    <img src={reflex___state____state__proyecto___proyecto____class_state.img_src_bernard}/>
+  )
+}
+
+export function Img_4b08cd1110cddf54cf1d07b527a48c54 () {
+  const reflex___state____state__proyecto___proyecto____class_state = useContext(StateContexts.reflex___state____state__proyecto___proyecto____class_state)
+
+
+
+  return (
+    <img src={reflex___state____state__proyecto___proyecto____class_state.img_src_bill}/>
+  )
+}
+
+export function Fragment_ce8bcea548e7072af157110c53ab895c () {
+  const { resolvedColorMode } = useContext(ColorModeContext)
+
+
+
+  return (
+    <Fragment>
+
+{isTrue((resolvedColorMode === "light")) ? (
+  <Fragment>
+
+<LucideSunIcon css={({ ["color"] : "var(--current-color)" })}/>
+</Fragment>
+) : (
+  <Fragment>
+
+<LucideMoonIcon css={({ ["color"] : "var(--current-color)" })}/>
+</Fragment>
+)}
+</Fragment>
+  )
+}
+
+export function Card_9599eedd2fcf312f28e1ba1153369215 () {
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+  const on_click_6947b007196e00116fe92d4b08e88bb2 = useCallback(((...args) => (addEvents([(Event("reflex___state____state.proyecto___proyecto____class_state.toggle_image_anita", ({  }), ({  })))], args, ({  })))), [addEvents, Event])
+
+
+  return (
+    <RadixThemesCard onClick={on_click_6947b007196e00116fe92d4b08e88bb2}>
+
+<RadixThemesBox css={({ ["textAlign"] : "center" })}>
+
+{"Anita"}
+</RadixThemesBox>
+<Img_93f3c3b6017dd065c3f95a6d38dfae6f/>
+</RadixThemesCard>
+  )
+}
+
+export function Img_73d717efbbecfecebc44403a1a0fd6b0 () {
+  const reflex___state____state__proyecto___proyecto____class_state = useContext(StateContexts.reflex___state____state__proyecto___proyecto____class_state)
+
+
+
+  return (
+    <img src={reflex___state____state__proyecto___proyecto____class_state.img_src_robert}/>
+  )
+}
 
 export default function Component() {
 
   return (
-    <Errorboundary_46b486f970bbf4431643b9aa32280c64/>
+    <Errorboundary_02a6bc9bb6feb1c177eed798ac32bd91/>
   )
 }
