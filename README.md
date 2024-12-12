@@ -95,6 +95,9 @@ Proyecto dividido entre las siguente carpetas:
 - **/rxconfig.py** : Archivo de la configuración de Reflex.
 - **/pytest.ini** : Ubicación de los marks de pytest.
 
+## **Diseño**
+### **Diagrama de Componentes**
+![componentes](assets/componentes.png)
 
 ## **Implementación**
 ### **Tecnologías y Herramientas Elegidas**
