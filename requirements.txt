@@ -1,0 +1,3 @@
+reflex==0.6.5
+#jupyter_core=deberia poner una versions
+#aqui deberia haber otra cosa=deberia poner una version
