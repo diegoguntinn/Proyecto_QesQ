@@ -72,6 +72,7 @@ Una vez realizado lo minimo indispensable para jugar el juego a nivel de vista d
 ## **Descripción Técnica**
 Esta aplicación la cual utiliza el Framework de Reflex, está inspirada en el juego de ¿Quién es quién?
 ## **Requisitos funcionales/no funcionales, NOT LIST**
+![NOT LIST](assets/notlist.png)
 ## **Diagrama de casos de uso**
 ![Casos de uso](assets/diagrama.png)
 
@@ -115,17 +116,18 @@ Dentro de la carpeta **/proyecto** estan el archivo **proyecto.py**, el cual tie
 
 ## **Análisis del tiempo invertido**
 ### **Graficas de tiempo**
+En que se uso las horas totales
 ![grafica](assets/grafica.png)
+Fraccionamiento por horas en dias de la semana
 ![grafica2](assets/grafica2.png)
+Intensidad emocional durante la duracion del proyecto
 ![grafica3](assets/grafica3.png)
 
-## **Conclusiones**
-Cabe recalcar que aún faltan cosas por implementar en este proyecto pero podemos presenciar novedades como los 2 modos de dificultad.
+## **Conclusion**
+Este proyecto nos ha servido para ver la programacion desde otro punto de vista y a afrontar nuevos retos obligandonos a ser autodidactas con un nuevo metodo de programacion con el uso de un "Framework" (Reflex). El cual nos abrio la vision del uso de python a la hora de desarrollar frontend.
 
-En general ha sido una experiencia interesante.
+En resumen, fue una experiencia didactica a la par que educativa que nos sirvio para implementar lo aprendido.
 ## **Posibles mejoras**
-En un futuro mejoraremos el estilo del Frontend para que pueda ser mucho más aceptable visualmente, optimizar a lo mejor la lógica detrás del juego e implementar branches de Git Flow (hotfix, release...)
+En un futuro cercano (estas navidades), ampliaremos las caracteristicas a la vez que haremos una experiencia autonoma del uso de las imagenes y ampliaremos los estilos.
 ## **Dificultades**
-En general nuestro mayor problema fueron las imagenes a la hora de ocultarlas al darle click en cada una.
-
-Mención honorable a los casos test.
+Nuesto problema principal fue la **¡¡VISTA DEL TABLERO!!** y que funcionase el estado de pregunta/respuesta.
