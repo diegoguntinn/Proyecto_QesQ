@@ -95,9 +95,6 @@ Proyecto dividido entre las siguente carpetas:
 - **/rxconfig.py** : Archivo de la configuración de Reflex.
 - **/pytest.ini** : Ubicación de los marks de pytest.
 
-## **Diseño**
-### **Diagrama de Componentes**
-![Diseño de componente](assets/component_componentes.png)
 
 ## **Implementación**
 ### **Tecnologías y Herramientas Elegidas**
@@ -116,11 +113,11 @@ Dentro de la carpeta **/proyecto** estan el archivo **proyecto.py**, el cual tie
 
 ## **Análisis del tiempo invertido**
 ### **Graficas de tiempo**
-En que se uso las horas totales
-![grafica](assets/grafica.png)
-Fraccionamiento por horas en dias de la semana
-![grafica2](assets/grafica2.png)
-Intensidad emocional durante la duracion del proyecto
+En que se uso las horas totales<br>
+![grafica](assets/grafica.png)<br><br>
+Fraccionamiento por horas en dias de la semana<br>
+![grafica2](assets/grafica2.png)<br><br>
+Intensidad emocional durante la duracion del proyecto<br>
 ![grafica3](assets/grafica3.png)
 
 ## **Conclusion**
