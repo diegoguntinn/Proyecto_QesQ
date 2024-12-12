@@ -325,7 +325,7 @@ def personaje():    # crea bon con respuesta
             rx.flex(
                 rx.image(src=State.personaje_maquina + ".png"),
                 rx.popover.close(
-                    rx.button("Close"),
+                    rx.button("Cerrar"),
                 ),
                 direction="column",
                 spacing="3",
