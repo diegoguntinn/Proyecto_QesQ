@@ -11,7 +11,7 @@ class State(rx.State):
 
     personaje_maquina = random.choice(list(Personajes.keys()))
 
-    caracteristicas_unicas = ["alex","charles","richard","sam","peter","tom","susan","robert","maria","philip","joe","paul","max","herman","george","frans","eric","david","claire","bernard","bill","anne","anita","alfred",'barba', 'barba', 'barba', 'bigote', 'bigote', 'calvo', 'alargada', 'gafas', 'gordo', 'hombre', 'grandes', 'lacitos', 'lazos', 'mayor', 'menton', 'mujer', 'grande', 'blanco', 'largo', 'marron', 'rubio', 'peliroja', 'pelirojo', 'rubia', 'sombrero', 'gorro', 'sonrojada', 'sonrojado', 'triste', 'coloretes']
+    caracteristicas_unicas = ["alex","charles","richard","sam","peter","tom","susan","robert","maria","philip","joe","paul","max","herman","george","frans","eric","david","claire","bernard","bill","anne","anita","alfred", 'barba', 'bigote', 'calvo', 'alargada', 'gafas', 'gordo', 'hombre', 'grandes', 'lacitos', 'lazos', 'mayor', 'menton', 'mujer', 'grande', 'blanco', 'largo', 'marron', 'rubio', 'negro', 'pelirojo', 'rubia', 'sombrero', 'gorro', 'sonrojado', 'triste', 'coloretes', 'pendientes', 'rizo',  'perilla']
 
     personaje_maquina: str
 
