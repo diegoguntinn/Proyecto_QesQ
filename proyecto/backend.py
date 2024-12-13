@@ -6,7 +6,7 @@ import os
 Personajes = {
     "Alex": ["hombre", "negro", "corto", "menton", "bigote", "grandes"],
     "Alferd": ["hombre", "pelirojo", "largo", "bigote"],
-    "Anita": ["mujer", "rubio", "largo", "lazos", "lacitos", "coloretes", "sorojado"],
+    "Anita": ["mujer", "rubio", "largo", "lazos", "lacitos", "coloretes", "sonrojado"],
     "Anne": ["mujer", "negro", "corto", "gorda", "pendientes", "rizo"],
     "Bernard": ["hombre", "marron", "corto", "sombrero", "gorro", "menton", "grande"],
     "Bill": ["hombre", "pelirojo", "calvo", "coloretes", "perilla", "sonrojado", "gordo"],
@@ -22,7 +22,7 @@ Personajes = {
     "Max": ["hombre", "negro", "corto", "bigote", "grande", "grandes"],
     "Paul": ["hombre", "blanco", "corto", "menton", "gafas", ],
     "Peter": ["hombre", "blanco", "corto", "grande", "grandes"],
-    "Philip": ["hombre", "negro", "corto", "barba", "coloretes", "sorojado"],
+    "Philip": ["hombre", "negro", "corto", "barba", "coloretes", "sonrojado"],
     "Richard": ["hombre", "marron", "calvo", "barba", "bigote", "alargada"],
     "Robert": ["hombre", "marron", "corto", "coloretes", "sonrojado", "menton", "grande", "triste"],
     "Sam": ["hombre", "blanco", "calvo", "gafas"],
