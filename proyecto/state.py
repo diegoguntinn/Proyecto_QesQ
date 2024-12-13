@@ -19,7 +19,7 @@ class State(rx.State):
     def answer(self):
       
         self.answers = 'Esta caracteristica no es valida' 
-        self.question = self.question.lower()
+
         for palabra in self.question.split():  # Dividir la pregunta en palabras
             if palabra in self.caracteristicas_unicas:
                 self.answers = 'esta en la lista'  # Comprobar si la palabra está en la lista de características
