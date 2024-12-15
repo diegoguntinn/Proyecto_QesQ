@@ -99,7 +99,7 @@ Esta aplicación la cual utiliza el Framework de Reflex, está inspirada en el j
 ## **Requisitos funcionales y no funcionales, NOT LIST**
 ![NOT LIST](assets/notlist.png)
 ## **Historias de usuario**
-
+![Historia_de_usuario](assets/Historia_de_usuario.PNG)
 ## **Diagrama de casos de uso**
 ![Casos de uso](assets/diagrama.png)
 
