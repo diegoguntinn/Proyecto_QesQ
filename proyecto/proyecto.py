@@ -316,7 +316,7 @@ def tablero():
 
 
 
-def personaje():    # crea bon con respuesta
+def personaje():    # crea boton con respuesta
     return rx.popover.root(
         rx.popover.trigger(
             rx.button("Respuesta"),

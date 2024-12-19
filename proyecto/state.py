@@ -4,12 +4,11 @@ import random
 from proyecto.backend import Personajes
 
 class State(rx.State):
-    question: str
+    question: str                           #tiene que ser un string
+    chat_history: list[tuple[str, str]]     #tiene que ser 2 strings dentr de una tupla dentro de una lista
+    answers: str                            #tiene que ser un string
 
-    chat_history: list[tuple[str, str]]
-    answers: str 
-
-    personaje_maquina = random.choice(list(Personajes.keys()))
+    personaje_maquina = random.choice(list(Personajes.keys())) #en esta linea se selecciona EL personaje random
 
     caracteristicas_unicas = ["alex","charles","richard","sam","peter","tom","susan","robert","maria","philip","joe","paul","max","herman","george","frans","eric","david","claire","bernard","bill","anne","anita","alfred", 'barba', 'bigote', 'calvo', 'alargada', 'gafas', 'gordo', 'hombre', 'grandes', 'lacitos', 'lazos', 'mayor', 'menton', 'mujer', 'grande', 'blanco', 'largo', 'marron', 'rubio', 'negro', 'pelirojo', 'rubia', 'sombrero', 'gorro', 'sonrojado', 'triste', 'coloretes', 'pendientes', 'rizo',  'perilla']
 
