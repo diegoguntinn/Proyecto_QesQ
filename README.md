@@ -2,30 +2,26 @@
 
 **Tabla de contenidos**
 
--   [**Introducción**](#introducción)
+-   [**Introducción**](#introduccion)
 -   [**Manual**](#manual)
     -   [**Pre-requisitos**](#pre-requisitos)
     -   [**Instalación**](#instalación)
-    -   [**Uso**](#uso)
--   [**Metodología**](#metodología)
+-   [**Metodología**](#metodologia)
 -   [**Descripción técnica**](#descripción-técnica)
-    -   [**Requisitos funcionales/no funcionales, NOT LIST**](#partes-interesadas-y-requisitos-funcionalesno-funcionales)
+    -   [**Requisitos funcionales y no funcionales, NOT LIST**](#requisitos-funcionales-y-no-funcionales-not-list)
     -   [**Historias de usuario**](#historias-de-usuario)
+    -   [**Diagrama de casos de uso**](diagrama-de-casos-de-uso)
     -   [**Arquitectura de la aplicación**](#arquitectura-de-la-aplicación)
 -   [**Diseño**](#diseño)
-    -   [**Diagrama de Componentes**](#componentes)
--   [**Implementacion**](#implementacion)
+    -   [**Diagrama de Componentes**](#diagrama-de-componentes)
+-   [**Implementacion**](#implementación)
     -   [**Tecnologías y Herramientas utilizadas**](#tecnologías-y-herramientas-elegidas)
     -   [**Backend**](#backend)
     -   [**Frontend**](#frontend)
--   [**Pruebas**](#pruebas)
-    -   [**Coverage**](#coverage)
-    -   [**Test de unidad**](#test-de-unidad)
-    -   [**Test de integración**](#test-de-integración)
--   [**Análisis del tiempo invertido**](#Tiempo-invertido)
-    -   [**Clockify + Wakatime**](#clockify)
-    -   [**Justificación temporal**](#justificación-temporal)
--   [**Conclusiones**](#conclusiones)
+-   [**Análisis del tiempo invertido**](#análisis-del-tiempo-invertido)
+    -   [**Graficas de tiempo**](#graficas-de-tiempo)
+-   [**Cuestiones**](#cuestiones)
+-   [**Conclusiones**](#conclusion)
     -   [**Posibles mejoras**](#posibles-mejoras)
     -   [**Dificultades**](#dificultades)
 
@@ -100,8 +96,10 @@ Una vez realizado lo minimo indispensable para jugar el juego a nivel de vista d
     
 ## **Descripción Técnica**
 Esta aplicación la cual utiliza el Framework de Reflex, está inspirada en el juego de ¿Quién es quién?
-## **Requisitos funcionales/no funcionales, NOT LIST**
+## **Requisitos funcionales y no funcionales, NOT LIST**
 ![NOT LIST](assets/notlist.png)
+## **Historias de usuario**
+![Historia_de_usuario](assets/Historia_de_usuario.PNG)
 ## **Diagrama de casos de uso**
 ![Casos de uso](assets/diagrama.png)
 
@@ -152,6 +150,15 @@ Fraccionamiento por horas en dias de la semana<br>
 Intensidad emocional durante la duracion del proyecto<br>
 ![grafica3](assets/grafica3.png)
 
+## **Cuestiones**
+**¿Qué herramienta de IA generativa usaste (nombre y versión)?** <br><br>
+    Chatgpt 4.0 y Reflex.<br><br>
+**¿Qué tipos de prompts proporcionaste?** <br><br>
+    Usando este diseño repitelo para esta lisat de nombres...<br><br>
+**¿Para qué usaste la herramienta?** <br><br>
+    Para generar codigo reptitivo del proyecto y resolución de dudas.<br><br>
+**¿Cómo has utilizado o cambiado la salida de la IA generativa?** <br><br>
+    En la repetición copias y pegado y en la resolución de dudas al no ser preguntas explicitas usamos su salida para ayudarnos con nuestro problema.<br><br>
 ## **Conclusion**
 Este proyecto nos ha servido para ver la programacion desde otro punto de vista y a afrontar nuevos retos obligandonos a ser autodidactas con un nuevo metodo de programacion con el uso de un "Framework" (Reflex). El cual nos abrio la vision del uso de python a la hora de desarrollar frontend.
 
